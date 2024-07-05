@@ -1,0 +1,21 @@
+name=houdini-chromeos_brya
+version=38795
+description="Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch"
+provides=("arm_translaton")
+conflicts=("arm_translaton")
+_commit="0488b666dfdb5378b98067aea50b4508db12ce3a"
+_repo="vendor_intel_proprietary_houdini"
+source=("https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
+md5sums=("b3c745de3c7d332169c7b5d4c286a4fb")
+android_version=11
+
+# 在 ~/.cache/waydroid-helper/extension/$name/$name-$version 做好包的结构, 所有的操作只能在这里
+# 以普通用户运行
+pre_install() {
+    cd $srcdir/..
+    mkdir -p $pkgdir/system
+    cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
+    install -Dm644 houdini.rc $pkgdir/system/etc/init/
+}
+# install
+# sudo cp -r ~/.cache/waydroid-helper/extension/$name/$name-$version /var/lib/overlay

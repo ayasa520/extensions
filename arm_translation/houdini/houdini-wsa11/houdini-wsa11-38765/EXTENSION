@@ -1,0 +1,21 @@
+name=houdini-wsa11
+version=38765
+description="Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image"
+provides=("arm_translaton")
+conflicts=("arm_translaton")
+_commit="cf7f970f6004f0c329b0464e3d65f9b0e2baea91"
+_repo="vendor_intel_proprietary_houdini"
+source=("https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
+md5sums=("5554b11cba905058c3d9bb5e45535d83")
+android_version=11
+
+
+# 以普通用户运行
+pre_install() {
+    mkdir -p $pkgdir/system
+    unzip $name-$version.zip -d $srcdir
+    cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
+    install -Dm644 houdini.rc $pkgdir/system/etc/init/
+}
+# 2. install
+# 包管理器完成

@@ -11,7 +11,7 @@ def generate_json(directory):
             result = sort_json_fields({**result, **dict(json.load(metainfo_file))})
 
     for entry in os.scandir(directory):
-        if entry.is_dir() and entry.name != ".git":
+        if entry.is_dir() and entry.name != ".git" and entry.name != ".github":
             result["list"].append(generate_json(entry.path))
         elif entry.is_file() and entry.name != "metainfo.json":
             result["files"].append(entry.name)

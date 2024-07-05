@@ -1,16 +1,5 @@
 [
     {
-        "path": ".github",
-        "list": [
-            {
-                "path": "workflows",
-                "files": [
-                    "gather_meta.yml"
-                ]
-            }
-        ]
-    },
-    {
         "name": "Arm Translation",
         "description": "Proprietary software to run ARM applications on X86 machines",
         "path": "arm_translation",

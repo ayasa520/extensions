@@ -24,8 +24,8 @@ pre_install() {
     unzip $_commit.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
     install -Dm644 houdini.rc $pkgdir/system/etc/init/
-    source scripton.sh
-    houdini_path="${pkgdir}/system/lib64/houdini.so"
+    source $startdir/scripton.sh
+    houdini_path="${pkgdir}/system/lib64/libhoudini.so"
     PatchHex "$houdini_path" 0x4062a5 48b8fbffffff 48b8ffffffff
     PatchHex "$houdini_path" 0x4099d6 83e0fb 83e0ff
     PatchHex "$houdini_path" 0x409b42 e8892feeff 9090909090

@@ -21,7 +21,7 @@
                                 "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
                                 "android_version": "11",
                                 "files": [
-                                    "prop",
+                                    "prop.json",
                                     "EXTENSION"
                                 ],
                                 "provides": [
@@ -58,7 +58,7 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "android_version": "11",
                                 "files": [
-                                    "prop",
+                                    "prop.json",
                                     "houdini.rc",
                                     "EXTENSION",
                                     "scripton.sh"
@@ -90,7 +90,7 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "android_version": "11",
                                 "files": [
-                                    "prop",
+                                    "prop.json",
                                     "houdini.rc",
                                     "EXTENSION"
                                 ],
@@ -122,7 +122,7 @@
                                 "android_version": "11",
                                 "pre_install": "post_install",
                                 "files": [
-                                    "prop",
+                                    "prop.json",
                                     "houdini.rc",
                                     "EXTENSION",
                                     "scripton.sh"
@@ -154,7 +154,7 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "android_version": "11",
                                 "files": [
-                                    "prop",
+                                    "prop.json",
                                     "houdini.rc",
                                     "EXTENSION",
                                     "scripton.sh"

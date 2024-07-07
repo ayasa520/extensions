@@ -14,6 +14,7 @@ android_version=11
 pre_install() {
     # cd $startdir 
     mkdir -p $pkgdir/system
+    unzip $_commit.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
 }
 # install

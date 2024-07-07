@@ -14,6 +14,7 @@ android_version=11
 pre_install() {
     cd $srcdir/..
     mkdir -p $pkgdir/system
+    unzip $_commit.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
     install -Dm644 houdini.rc $pkgdir/system/etc/init/
     source scripton.sh

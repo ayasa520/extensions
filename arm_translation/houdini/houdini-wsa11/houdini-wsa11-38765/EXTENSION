@@ -13,7 +13,7 @@ android_version=11
 # 以普通用户运行
 pre_install() {
     mkdir -p $pkgdir/system
-    unzip $name-$version.zip -d $srcdir
+    unzip $_commit.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
     install -Dm644 houdini.rc $pkgdir/system/etc/init/
 }

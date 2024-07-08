@@ -16,6 +16,5 @@
     "md5sums": [
         "5554b11cba905058c3d9bb5e45535d83"
     ], 
-    "android_version": "11", 
-    "pre_install": "post_install"
+    "android_version": "11"
 }

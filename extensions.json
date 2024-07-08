@@ -120,7 +120,6 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
                                 "android_version": "11",
-                                "pre_install": "post_install",
                                 "files": [
                                     "prop.json",
                                     "houdini.rc",

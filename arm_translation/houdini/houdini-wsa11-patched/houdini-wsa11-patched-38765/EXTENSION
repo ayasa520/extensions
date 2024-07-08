@@ -33,9 +33,3 @@ pre_install() {
 }
 # 2. install
 # sudo cp -r ~/.cache/waydroid-helper/extension/$name/$name-$version /var/lib/overlay
-
-# 3. post_insatll
-post_install() {
-    # apply_props 由包管理器提供
-    apply_props prop
-}

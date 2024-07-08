@@ -10,12 +10,9 @@ md5sums=("5554b11cba905058c3d9bb5e45535d83")
 android_version=11
 
 
-# 以普通用户运行
 pre_install() {
     mkdir -p $pkgdir/system
     unzip $_commit.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
     install -Dm644 houdini.rc $pkgdir/system/etc/init/
 }
-# 2. install
-# 包管理器完成

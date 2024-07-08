@@ -8,10 +8,10 @@
     "conflicts": [
         "arm_translaton"
     ], 
-    "_repo": "vendor_intel_proprietary_houdini", 
+    "_repo": "vendor_google_proprietary_ndk_translation", 
     "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc", 
     "source": [
-        "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+        "https://github.com/supremegamers/vendor_google_proprietary_ndk_translation/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
     ], 
     "md5sums": [
         "6d4b3788ac9e7e953aada561f64a2563"

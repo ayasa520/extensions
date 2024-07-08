@@ -51,7 +51,7 @@
                         "list": [
                             {
                                 "name": "houdini-chromeos_brya",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
                                 "version": "38795",
                                 "path": "houdini-chromeos_brya-38795",
                                 "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",

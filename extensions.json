@@ -146,7 +146,7 @@
                         "list": [
                             {
                                 "name": "houdini-wsa11-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
                                 "version": "38765",
                                 "path": "houdini-wsa11-patched-38765",
                                 "_repo": "vendor_intel_proprietary_houdini",

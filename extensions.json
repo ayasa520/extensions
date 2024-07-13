@@ -10,6 +10,37 @@
                 "path": "ndk_translation",
                 "list": [
                     {
+                        "path": "ndk_translation-chromeos_guybrush-patched",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_guybrush-patched",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
+                                "version": "R119-15633.69.0",
+                                "path": "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "prop.json",
+                                    "scripton_ndk.sh"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                ],
+                                "md5sums": [
+                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "path": "ndk_translation-chromeos_guybrush",
                         "list": [
                             {
@@ -21,8 +52,8 @@
                                 "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
                                 "android_version": "11",
                                 "files": [
-                                    "prop.json",
-                                    "EXTENSION"
+                                    "EXTENSION",
+                                    "prop.json"
                                 ],
                                 "provides": [
                                     "arm_translaton"
@@ -31,7 +62,7 @@
                                     "arm_translaton"
                                 ],
                                 "source": [
-                                    "https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
                                 ],
                                 "md5sums": [
                                     "6d4b3788ac9e7e953aada561f64a2563"
@@ -47,6 +78,70 @@
                 "path": "houdini",
                 "list": [
                     {
+                        "path": "houdini-wsa11-patched",
+                        "list": [
+                            {
+                                "name": "houdini-wsa11-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
+                                "version": "38765",
+                                "path": "houdini-wsa11-patched-38765",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "scripton.sh",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                ],
+                                "md5sums": [
+                                    "5554b11cba905058c3d9bb5e45535d83"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-chromeos_brya-patched",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_brya-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
+                                "version": "38795",
+                                "path": "houdini-chromeos_brya-patched-38795",
+                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "scripton.sh",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_brya-patched-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                ],
+                                "md5sums": [
+                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "path": "houdini-wsa11",
                         "list": [
                             {
@@ -58,9 +153,9 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "android_version": "11",
                                 "files": [
-                                    "prop.json",
+                                    "EXTENSION",
                                     "houdini.rc",
-                                    "EXTENSION"
+                                    "prop.json"
                                 ],
                                 "provides": [
                                     "arm_translaton"
@@ -69,7 +164,7 @@
                                     "arm_translaton"
                                 ],
                                 "source": [
-                                    "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                    "houdini-wsa11-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
                                 ],
                                 "md5sums": [
                                     "5554b11cba905058c3d9bb5e45535d83"
@@ -89,10 +184,9 @@
                                 "_repo": "vendor_intel_proprietary_houdini",
                                 "android_version": "11",
                                 "files": [
-                                    "prop.json",
-                                    "houdini.rc",
                                     "EXTENSION",
-                                    "scripton.sh"
+                                    "houdini.rc",
+                                    "prop.json"
                                 ],
                                 "provides": [
                                     "arm_translaton"
@@ -101,76 +195,46 @@
                                     "arm_translaton"
                                 ],
                                 "source": [
-                                    "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                    "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
                                 ],
                                 "md5sums": [
                                     "b3c745de3c7d332169c7b5d4c286a4fb"
                                 ]
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Magisk",
+        "description": "Magisk is a suite of open source software for customizing Android",
+        "path": "magisk",
+        "list": [
+            {
+                "path": "magisk-delta",
+                "list": [
                     {
-                        "path": "houdini-chromeos_brya-patched",
-                        "list": [
-                            {
-                                "name": "houdini-chromeos_brya-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
-                                "version": "38795",
-                                "path": "houdini-chromeos_brya-patched-38795",
-                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "houdini.rc",
-                                    "EXTENSION",
-                                    "scripton.sh"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
-                                ],
-                                "md5sums": [
-                                    "b3c745de3c7d332169c7b5d4c286a4fb"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-wsa11-patched",
-                        "list": [
-                            {
-                                "name": "houdini-wsa11-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
-                                "version": "38765",
-                                "path": "houdini-wsa11-patched-38765",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "houdini.rc",
-                                    "EXTENSION",
-                                    "scripton.sh"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
-                                ],
-                                "md5sums": [
-                                    "5554b11cba905058c3d9bb5e45535d83"
-                                ]
-                            }
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "fdac22ba-delta(25210)",
+                        "path": "magisk-delta-25210",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-fdac22ba-delta(25210).apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "ec98dcee84a47785dc551eb7c465b25f"
                         ]
                     }
                 ]

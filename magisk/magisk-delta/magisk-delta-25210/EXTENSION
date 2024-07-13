@@ -39,7 +39,7 @@ pre_install() {
     unzip "${name}-${version}.apk" -d "$srcdir"
     
     install -Dm755 "$lib_dir/libbusybox.so" "$magisk_dir/busybox"
-    install -Dm755 "$lib_dir/libmagisk64.so" "$magisk_dir/magisk"
+    install -Dm755 "$lib_dir/libmagisk${bit}.so" "$magisk_dir/magisk${bit}"
     install -Dm755 "$lib_dir/libmagiskboot.so" "$magisk_dir/magiskboot"
     install -Dm755 "$lib_dir/libmagiskinit.so" "$magisk_dir/magiskinit"
     install -Dm755 "$lib_dir/libmagiskpolicy.so" "$magisk_dir/magiskpolicy"

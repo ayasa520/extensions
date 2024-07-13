@@ -1,0 +1,59 @@
+name=magisk-delta
+version="fdac22ba-25210"
+description="Magisk delta is a forked version of the original Magisk"
+provides=("magisk")
+conflicts=("magisk")
+source=("${name}-${version}.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive")
+md5sums=("ec98dcee84a47785dc551eb7c465b25f")
+android_version=11
+
+pre_install() {
+    magisk_dir="$pkgdir/system/etc/init/magisk"
+    architecture=$(uname -m)
+    case "$architecture" in
+        i386 | i486 | i586 | i686)
+            mapped_arch="x86"
+            bit=32
+        ;;
+        x86_64)
+            mapped_arch="x86_64"
+            bit=64
+        ;;
+        armv7l | armv8l)
+            mapped_arch="armeabi-v7a"
+            bit=32
+        ;;
+        aarch64)
+            mapped_arch="arm64-v8a"
+            bit=64
+        ;;
+        *)
+            echo "Error: Unknown architecture '$architecture'" >&2
+            exit 1
+        ;;
+    esac
+
+    lib_dir="$srcdir/lib/$mapped_arch"
+    mkdir -p "$magisk_dir"
+    mkdir -p "$pkgdir/sbin"
+    unzip "${name}-${version}.apk" -d "$srcdir"
+    
+    install -Dm755 "$lib_dir/libbusybox.so" "$magisk_dir/busybox"
+    install -Dm755 "$lib_dir/libmagisk64.so" "$magisk_dir/magisk"
+    install -Dm755 "$lib_dir/libmagiskboot.so" "$magisk_dir/magiskboot"
+    install -Dm755 "$lib_dir/libmagiskinit.so" "$magisk_dir/magiskinit"
+    install -Dm755 "$lib_dir/libmagiskpolicy.so" "$magisk_dir/magiskpolicy"
+    install -Dm755 "$srcdir/assets/chromeos/futility" "$magisk_dir/chromeos/futility"
+    install -Dm755 "$srcdir/assets/chromeos/kernel.keyblock" "$magisk_dir/chromeos/kernel.keyblock"
+    install -Dm755 "$srcdir/assets/chromeos/kernel_data_key.vbprivk" "$magisk_dir/chromeos/kernel_data_key.vbprivk"
+    install -Dm755 "$srcdir/assets/addon.d.sh" "$magisk_dir/addon.d.sh"
+    install -Dm755 "$srcdir/assets/boot_patch.sh" "$magisk_dir/boot_patch.sh"
+    install -Dm755 "$srcdir/assets/stub.apk" "$magisk_dir/stub.apk"
+    install -Dm755 "$srcdir/assets/util_functions.sh" "$magisk_dir/util_functions.sh"
+    install -Dm644 bootanim.rc "$pkgdir/system/etc/init/bootanim.rc"
+    install -Dm755 "${name}-${version}.apk" "$magisk_dir/magisk.apk"
+
+    sed "s/\${bit}/$bit/g" -i "$pkgdir/system/etc/init/bootanim.rc"
+    
+    chown 2000:root -R "$magisk_dir"
+}

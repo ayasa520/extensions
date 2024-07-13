@@ -11,7 +11,7 @@
     "_repo": "vendor_intel_proprietary_houdini", 
     "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91", 
     "source": [
-        "https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+        "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
     ], 
     "md5sums": [
         "5554b11cba905058c3d9bb5e45535d83"

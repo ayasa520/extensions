@@ -14,5 +14,6 @@
     "md5sums": [
         "ec98dcee84a47785dc551eb7c465b25f"
     ], 
+    "install": "magisk-delta.install", 
     "android_version": "11"
 }

@@ -9,7 +9,7 @@ source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archi
 md5sums=("6d4b3788ac9e7e953aada561f64a2563")
 android_version=11
 
-pre_install() {
+package() {
     # cd $startdir 
     mkdir -p $pkgdir/system
     unzip ${name}-${version}.zip -d $srcdir

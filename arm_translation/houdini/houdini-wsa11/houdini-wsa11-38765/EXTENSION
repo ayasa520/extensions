@@ -10,7 +10,7 @@ md5sums=("5554b11cba905058c3d9bb5e45535d83")
 android_version=11
 
 
-pre_install() {
+package() {
     mkdir -p $pkgdir/system
     unzip ${name}-${version}.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system

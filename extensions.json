@@ -1,5 +1,73 @@
 [
     {
+        "name": "Launchers",
+        "description": "Android launchers offer customizable home screens for personalized device appearance and functionality",
+        "path": "launcher",
+        "list": [
+            {
+                "path": "kvaesitso",
+                "list": [
+                    {
+                        "name": "kvaesitso",
+                        "description": "A search-focused Android launcher",
+                        "version": "1.31.2",
+                        "path": "kvaesitso-1312",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION",
+                            "prop.json",
+                            "kvaesitso.rc"
+                        ],
+                        "provides": [
+                            "launcher",
+                            "kvaesitso"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+                        ],
+                        "md5sums": [
+                            "b35ebd52cb2ee0f010425e06907934ac"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "smartdock",
+                "list": [
+                    {
+                        "name": "smartdock",
+                        "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
+                        "version": "1.12.1",
+                        "path": "smartdock-1121",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION",
+                            "prop.json",
+                            "permissions_cu.axel.smartdock.xml",
+                            "smartdock.rc"
+                        ],
+                        "provides": [
+                            "smartdock",
+                            "launcher"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "smartdock-1.12.1.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk"
+                        ],
+                        "md5sums": [
+                            "dde94e2babc5f78bf7279e60a98eef05"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Arm Translation",
         "description": "Proprietary software to run ARM applications on X86 machines",
         "path": "arm_translation",
@@ -208,9 +276,9 @@
         ]
     },
     {
-        "name": "Magisk",
-        "description": "Magisk is a suite of open source software for customizing Android",
-        "path": "magisk",
+        "name": "Root Manager",
+        "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
+        "path": "root",
         "list": [
             {
                 "path": "magisk-delta",
@@ -218,7 +286,7 @@
                     {
                         "name": "magisk-delta",
                         "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "fdac22ba-25210",
+                        "version": "25210-fdac22ba",
                         "path": "magisk-delta-25210",
                         "install": "magisk-delta.install",
                         "android_version": "11",
@@ -234,7 +302,7 @@
                             "magisk"
                         ],
                         "source": [
-                            "magisk-delta-fdac22ba-25210.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                            "magisk-delta-25210-fdac22ba.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
                         ],
                         "md5sums": [
                             "ec98dcee84a47785dc551eb7c465b25f"
@@ -243,7 +311,7 @@
                     {
                         "name": "magisk-delta",
                         "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "R6687BB53-27001",
+                        "version": "27001-R6687BB53",
                         "path": "magisk-delta-27001",
                         "install": "magisk-delta.install",
                         "android_version": "11",
@@ -259,7 +327,7 @@
                             "magisk"
                         ],
                         "source": [
-                            "magisk-delta-R6687BB53-27001.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                            "magisk-delta-27001-R6687BB53.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
                         ],
                         "md5sums": [
                             "664cf8ceb7eda13fcb9fd5ad16e62f54"
@@ -268,7 +336,7 @@
                     {
                         "name": "magisk-delta",
                         "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "d2a66567-26105",
+                        "version": "26105-d2a66567",
                         "path": "magisk-delta-26105",
                         "install": "magisk-delta.install",
                         "android_version": "11",
@@ -284,7 +352,7 @@
                             "magisk"
                         ],
                         "source": [
-                            "magisk-delta-d2a66567-26105.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                            "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
                         ],
                         "md5sums": [
                             "47fdc4dcd7cdff81fe73e3e39cb4e82b"

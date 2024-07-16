@@ -1,0 +1,39 @@
+name=smartdock
+version="1.12.1"
+description="A user-friendly desktop mode launcher that offers a modern and customizable user"
+provides=("smartdock launcher")
+conflicts=("launcher")
+source=("${name}-${version}.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk")
+md5sums=("dde94e2babc5f78bf7279e60a98eef05")
+android_version=11
+
+package() {
+    architecture=$(uname -m)
+    case "$architecture" in
+        i386 | i486 | i586 | i686)
+            mapped_arch="x86"
+            bit=32
+        ;;
+        x86_64)
+            mapped_arch="x86_64"
+            bit=64
+        ;;
+        armv7l | armv8l)
+            mapped_arch="armeabi-v7a"
+            bit=32
+        ;;
+        aarch64)
+            mapped_arch="arm64-v8a"
+            bit=64
+        ;;
+        *)
+            echo "Error: Unknown architecture '$architecture'" >&2
+            exit 1
+        ;;
+    esac
+    unzip "$name-$version.apk" -d "$srcdir"
+    install -Dm644 "$srcdir/lib/$mapped_arch/libnrb.so" "$pkgdir/system/priv-app/SmartDock/lib/$mapped_arch/libnrb.so"
+    install -Dm755 "$name-$version.apk" "$pkgdir/system/priv-app/SmartDock/smartdock.apk"
+    install -Dm644 "smartdock.rc" "$pkgdir/system/etc/init/smartdock.rc"
+    install -Dm644 "permissions_cu.axel.smartdock.xml" "$pkgdir/system/etc/permissions/permissions_cu.axel.smartdock.xml"
+}

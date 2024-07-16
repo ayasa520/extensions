@@ -1,0 +1,19 @@
+{
+    "name": "kvaesitso",
+    "version": "1.31.2",
+    "description": "A search-focused Android launcher",
+    "provides": [
+        "launcher",
+        "kvaesitso"
+    ],
+    "conflicts": [
+        "launcher"
+    ],
+    "source": [
+        "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+    ],
+    "md5sums": [
+        "b35ebd52cb2ee0f010425e06907934ac"
+    ],
+    "android_version": "11"
+}

@@ -1,5 +1,5 @@
 name=magisk-delta
-version="d2a66567-26105"
+version="26105-d2a66567"
 description="Magisk delta is a forked version of the original Magisk"
 provides=("magisk")
 conflicts=("magisk")

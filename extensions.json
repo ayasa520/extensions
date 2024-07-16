@@ -243,6 +243,31 @@
                     {
                         "name": "magisk-delta",
                         "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "R6687BB53-27001",
+                        "path": "magisk-delta-27001",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION",
+                            "magisk-delta.install",
+                            "bootanim.rc"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-R6687BB53-27001.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "664cf8ceb7eda13fcb9fd5ad16e62f54"
+                        ]
+                    },
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
                         "version": "d2a66567-26105",
                         "path": "magisk-delta-26105",
                         "install": "magisk-delta.install",

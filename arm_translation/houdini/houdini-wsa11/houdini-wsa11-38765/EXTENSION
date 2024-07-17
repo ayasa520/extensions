@@ -8,6 +8,7 @@ _repo="vendor_intel_proprietary_houdini"
 source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
 md5sums=("5554b11cba905058c3d9bb5e45535d83")
 android_version=11
+arch=("x86_64")
 
 
 package() {

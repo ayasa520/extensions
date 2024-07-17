@@ -1,0 +1,36 @@
+{
+    "name": "open_gapps", 
+    "version": "20220503", 
+    "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages", 
+    "provides": [
+        "gapps"
+    ], 
+    "conflicts": [
+        "gapps", 
+        "microg"
+    ], 
+    "source_x86_64": [
+        "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220503/open_gapps-x86_64-11.0-pico-20220503.zip/download"
+    ], 
+    "source_x86": [
+        "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86/20220503/open_gapps-x86-11.0-pico-20220503.zip/download"
+    ], 
+    "source_arm64": [
+        "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220503/open_gapps-arm64-11.0-pico-20220503.zip/download"
+    ], 
+    "md5sums_x86_64": [
+        "5a6d242be34ad1acf92899c7732afa1b"
+    ], 
+    "md5sums_x86": [
+        "efda4943076016d00b40e0874b12ddd3"
+    ], 
+    "md5sums_arm64": [
+        "7790055d34bbfc6fe610b0cd263a7add"
+    ], 
+    "android_version": "11", 
+    "arch": [
+        "x86_64", 
+        "x86", 
+        "arm64"
+    ]
+}

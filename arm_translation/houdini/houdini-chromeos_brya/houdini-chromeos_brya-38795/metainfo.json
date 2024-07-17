@@ -16,5 +16,8 @@
     "md5sums": [
         "b3c745de3c7d332169c7b5d4c286a4fb"
     ], 
-    "android_version": "11"
+    "android_version": "11", 
+    "arch": [
+        "x86_64"
+    ]
 }

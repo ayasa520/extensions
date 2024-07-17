@@ -8,9 +8,8 @@ md5sums=("dde94e2babc5f78bf7279e60a98eef05")
 android_version=11
 
 package() {
-    architecture=$(uname -m)
-    case "$architecture" in
-        i386 | i486 | i586 | i686)
+    case "$arch" in
+        x86)
             mapped_arch="x86"
             bit=32
         ;;
@@ -18,16 +17,16 @@ package() {
             mapped_arch="x86_64"
             bit=64
         ;;
-        armv7l | armv8l)
+        arm)
             mapped_arch="armeabi-v7a"
             bit=32
         ;;
-        aarch64)
+        arm64)
             mapped_arch="arm64-v8a"
             bit=64
         ;;
         *)
-            echo "Error: Unknown architecture '$architecture'" >&2
+            echo "Error: Unknown architecture '$arch'" >&2
             exit 1
         ;;
     esac

@@ -26,7 +26,7 @@
                             "launcher"
                         ],
                         "source": [
-                            "kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+                            "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
                         ],
                         "md5sums": [
                             "b35ebd52cb2ee0f010425e06907934ac"
@@ -76,7 +76,7 @@
                 "path": "opengapps",
                 "list": [
                     {
-                        "name": "open_gapps",
+                        "name": "opengapps",
                         "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
                         "version": "20220503",
                         "path": "20220503",
@@ -92,13 +92,13 @@
                             "microg"
                         ],
                         "source_x86_64": [
-                            "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220503/open_gapps-x86_64-11.0-pico-20220503.zip/download"
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220503/open_gapps-x86_64-11.0-pico-20220503.zip/download"
                         ],
                         "source_x86": [
-                            "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86/20220503/open_gapps-x86-11.0-pico-20220503.zip/download"
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86/20220503/open_gapps-x86-11.0-pico-20220503.zip/download"
                         ],
                         "source_arm64": [
-                            "open_gapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220503/open_gapps-arm64-11.0-pico-20220503.zip/download"
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220503/open_gapps-arm64-11.0-pico-20220503.zip/download"
                         ],
                         "md5sums_x86_64": [
                             "5a6d242be34ad1acf92899c7732afa1b"
@@ -107,12 +107,104 @@
                             "efda4943076016d00b40e0874b12ddd3"
                         ],
                         "md5sums_arm64": [
-                            "7790055d34bbfc6fe610b0cd263a7add"
+                            "67e927e4943757f418e4f934825cf987"
                         ],
                         "arch": [
                             "x86_64",
                             "x86",
                             "arm64"
+                        ]
+                    },
+                    {
+                        "name": "opengapps",
+                        "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
+                        "version": "20220215",
+                        "path": "20220215",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "gapps"
+                        ],
+                        "conflicts": [
+                            "gapps",
+                            "microg"
+                        ],
+                        "source_x86_64": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220215/open_gapps-x86_64-11.0-pico-20220215.zip/download"
+                        ],
+                        "source_arm64": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220215/open_gapps-arm64-11.0-pico-20220215.zip/download"
+                        ],
+                        "source_arm": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm/20220215/open_gapps-arm-11.0-pico-20220215.zip/download"
+                        ],
+                        "md5sums_x86_64": [
+                            "1c8a26d1311e0743ec137a9baf22c3d6"
+                        ],
+                        "md5sums_arm64": [
+                            "7790055d34bbfc6fe610b0cd263a7add"
+                        ],
+                        "md5sums_arm": [
+                            "8719519fa32ae83a62621c6056d32814"
+                        ],
+                        "arch": [
+                            "x86_64",
+                            "arm64",
+                            "arm"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "mindthegapps",
+                "list": [
+                    {
+                        "name": "MindTheGapps",
+                        "description": "GApps for android devices",
+                        "version": "20240619",
+                        "path": "20240419",
+                        "android_version": "13",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "gapps"
+                        ],
+                        "conflicts": [
+                            "gapps",
+                            "microg"
+                        ],
+                        "source_x86_64": [
+                            "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86_64-20240619.zip"
+                        ],
+                        "source_x86": [
+                            "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86-20240619.zip"
+                        ],
+                        "source_arm64": [
+                            "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm64-20240619.zip"
+                        ],
+                        "source_arm": [
+                            "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm-20240619.zip"
+                        ],
+                        "md5sums_x86_64": [
+                            "25927de9f175e1db6647ccb62c5503ce"
+                        ],
+                        "md5sums_x86": [
+                            "821ae859631f3d22190831e28ffcc71d"
+                        ],
+                        "md5sums_arm64": [
+                            "4205fb7a6313ddc595cb41ad7d850474"
+                        ],
+                        "md5sums_arm": [
+                            "ec7aa5efc9e449b101bc2ee7448a49bf"
+                        ],
+                        "arch": [
+                            "x86_64",
+                            "x86",
+                            "arm64",
+                            "arm"
                         ]
                     }
                 ]
@@ -346,6 +438,110 @@
         ]
     },
     {
+        "name": "MicroG",
+        "description": "A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries",
+        "path": "microg",
+        "list": [
+            {
+                "name": "MinMicroG",
+                "description": "This is a simple MicroG installer",
+                "path": "MinMicroG",
+                "list": [
+                    {
+                        "path": "nogoolag",
+                        "list": [
+                            {
+                                "name": "MinMicroG-NoGoolag",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "EXTENSION",
+                                    "microg.install",
+                                    "microg.rc"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-NoGoolag-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip"
+                                ],
+                                "md5sums": [
+                                    "eedb4eee533b525e4f7a018c699b6b6b"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "standard",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Standard",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "EXTENSION",
+                                    "microg.install",
+                                    "microg.rc"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Standard-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Standard-UPDATELY-20240613004613.zip"
+                                ],
+                                "md5sums": [
+                                    "82268a3035356152787aadd7ae03ee8a"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "minimal",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Minimal",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "EXTENSION",
+                                    "microg.install",
+                                    "microg.rc"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Minimal-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip"
+                                ],
+                                "md5sums": [
+                                    "5a8fbcfd13e732194efafe84368a855d"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Root Manager",
         "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
         "path": "root",
@@ -426,6 +622,40 @@
                         ],
                         "md5sums": [
                             "47fdc4dcd7cdff81fe73e3e39cb4e82b"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Other",
+        "description": "Some stuff that might be useful",
+        "path": "other",
+        "list": [
+            {
+                "path": "hidestatusbar",
+                "list": [
+                    {
+                        "name": "hidestatusbar",
+                        "description": "Hide status bar",
+                        "version": "0.0.2",
+                        "path": "0_0_2",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "hidestatusbar"
+                        ],
+                        "conflicts": [
+                            "hidestatusbar"
+                        ],
+                        "source": [
+                            "hidestatusbar-0.0.2.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.2/app-release.apk"
+                        ],
+                        "md5sums": [
+                            "ff2fe63ddfb4b035e6720a1b195b2355"
                         ]
                     }
                 ]

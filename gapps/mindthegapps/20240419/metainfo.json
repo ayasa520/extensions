@@ -1,0 +1,43 @@
+{
+    "name": "MindTheGapps", 
+    "version": "20240619", 
+    "description": "GApps for android devices", 
+    "provides": [
+        "gapps"
+    ], 
+    "conflicts": [
+        "gapps", 
+        "microg"
+    ], 
+    "source_x86_64": [
+        "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86_64-20240619.zip"
+    ], 
+    "source_x86": [
+        "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86-20240619.zip"
+    ], 
+    "source_arm64": [
+        "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm64-20240619.zip"
+    ], 
+    "source_arm": [
+        "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm-20240619.zip"
+    ], 
+    "md5sums_x86_64": [
+        "25927de9f175e1db6647ccb62c5503ce"
+    ], 
+    "md5sums_x86": [
+        "821ae859631f3d22190831e28ffcc71d"
+    ], 
+    "md5sums_arm64": [
+        "4205fb7a6313ddc595cb41ad7d850474"
+    ], 
+    "md5sums_arm": [
+        "ec7aa5efc9e449b101bc2ee7448a49bf"
+    ], 
+    "android_version": "13", 
+    "arch": [
+        "x86_64", 
+        "x86", 
+        "arm64", 
+        "arm"
+    ]
+}

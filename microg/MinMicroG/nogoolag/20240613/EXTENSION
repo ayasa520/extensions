@@ -1,0 +1,62 @@
+name="MinMicroG-NoGoolag"
+version=20240613
+description="A Minimal MicroG installer with just the essentials"
+provides=("microg")
+conflicts=("gapps" "microg")
+source=("${name}-${version}.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip")
+md5sums=("eedb4eee533b525e4f7a018c699b6b6b")
+install="microg.install"
+
+package() {
+    unzip "${name}-${version}.zip" -d "$srcdir"
+    if [[ "$CARCH" == arm* ]]; then
+        SUB_ARCH="arm"
+    else
+        SUB_ARCH="x86"
+    fi
+
+    find "$srcdir/system" -type d | while read -r root; do
+        dir_name=$(basename "$root")
+        if [[ "$dir_name" == -* && "$dir_name" == *- ]]; then
+            archs=()
+            sdks=()
+            IFS='-' read -r -a parts <<< "$dir_name"
+            for i in "${parts[@]}"; do
+                if [[ "$i" =~ ^[0-9]+$ ]]; then
+                    sdks+=("$i")
+                elif [[ -n "$i" ]]; then
+                    archs+=("$i")
+                fi
+            done
+            if [[ (${#archs[@]} -ne 0 && ! " ${archs[*]} " =~ " $CARCH " && ! " ${archs[*]} " =~ " $SUB_ARCH ") || (${#sdks[@]} -ne 0 && ! " ${sdks[*]} " =~ " $SDK ") ]]; then
+                rm -rf "$root"
+            else
+                cp -rf "$root"/* "$root/.."
+                rm -rf "$root"
+            fi
+        fi        
+
+    done
+
+    mkdir -p "$pkgdir/system/"
+    cp -rf "$srcdir"/system/* "$pkgdir/system/"
+    install -Dm644 microg.rc "$pkgdir/system/etc/init/microg.rc"
+
+    mkdir -p $pkgdir/system/priv-app
+    directories=(
+        "GmsCore"
+        "GmsCore_update"
+        "PrebuiltGmsCore"
+        "PrebuiltGmsCorePi"
+        "PrebuiltGmsCorePix"
+        "GoogleServicesFramework"
+        "Phonesky"
+    )
+
+    for dir in "${directories[@]}"; do
+        path="$pkgdir/system/priv-app/$dir"
+        if [ ! -d "$path" ]; then
+            mknod "$path" c 0 0
+        fi
+    done
+}

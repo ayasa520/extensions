@@ -1,0 +1,12 @@
+name=hidestatusbar
+version=0.0.2
+description="Hide status bar"
+provides=("hidestatusbar")
+conflicts=("hidestatusbar")
+source=("${name}-${version}.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.2/app-release.apk")
+md5sums=("ff2fe63ddfb4b035e6720a1b195b2355")
+android_version=11
+
+package() {
+    install -Dm755 "${name}-${version}.apk" "$pkgdir/system/product/overlay/hidestatusbar.apk"
+}

@@ -8,7 +8,7 @@ md5sums=("dde94e2babc5f78bf7279e60a98eef05")
 android_version=11
 
 package() {
-    case "$arch" in
+    case "$CARCH" in
         x86)
             mapped_arch="x86"
             bit=32
@@ -26,7 +26,7 @@ package() {
             bit=64
         ;;
         *)
-            echo "Error: Unknown architecture '$arch'" >&2
+            echo "Error: Unknown architecture '$CARCH'" >&2
             exit 1
         ;;
     esac

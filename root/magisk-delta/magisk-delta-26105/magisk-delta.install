@@ -1,4 +1,5 @@
-post_install:
+pre_install:
+  - rm_apk: ["io.github.huskydg.magisk"]
   - rm_overlay_rw:
       [
         "system/system/etc/init/bootanim.rc",
@@ -9,7 +10,8 @@ post_install:
         "system/root/.magisk",
         "system/sbin/.magisk",
       ]
-  - rm_data: ["adb/magisk", "adb/magisk.db"]
+  - rm_data: ["adb/magisk", "adb/magisk.db", "data/io.github.huskydg.magisk"]
+post_install:
   - cp_to_data:
       src: "$pkgdir/system/etc/init/magisk"
       dest: "adb/"
@@ -24,4 +26,5 @@ post_remove:
         "system/root/.magisk",
         "system/sbin/.magisk",
       ]
-  - rm_data: ["adb/magisk", "adb/magisk.db"]
+  - rm_data: ["adb/magisk", "adb/magisk.db", "data/io.github.huskydg.magisk"]
+  - rm_apk: ["io.github.huskydg.magisk"]

@@ -55,5 +55,5 @@ package() {
 
     sed "s/\${bit}/$bit/g" -i "$pkgdir/system/etc/init/bootanim.rc"
     
-    chown 2000:0 -R "$magisk_dir"
+    chown 2000:root -R "$magisk_dir"
 }

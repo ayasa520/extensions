@@ -1,66 +1,328 @@
 [
     {
-        "name": "Launchers",
-        "description": "Android launchers offer customizable home screens for personalized device appearance and functionality",
-        "path": "launcher",
+        "name": "Arm Translation",
+        "description": "Proprietary software to run ARM applications on X86 machines",
+        "path": "arm_translation",
         "list": [
             {
-                "path": "kvaesitso",
+                "name": "ndk_translation",
+                "description": "Google's ndk_translation for Intel/AMD x86 CPU",
+                "path": "ndk_translation",
                 "list": [
                     {
-                        "name": "kvaesitso",
-                        "description": "A search-focused Android launcher",
-                        "version": "1.31.2",
-                        "path": "kvaesitso-1312",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "prop.json",
-                            "kvaesitso.rc"
-                        ],
-                        "provides": [
-                            "launcher",
-                            "kvaesitso"
-                        ],
-                        "conflicts": [
-                            "launcher"
-                        ],
-                        "source": [
-                            "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
-                        ],
-                        "md5sums": [
-                            "b35ebd52cb2ee0f010425e06907934ac"
+                        "path": "ndk_translation-chromeos_guybrush-patched",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_guybrush-patched",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
+                                "version": "R119-15633.69.0",
+                                "path": "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "android_version": "11",
+                                "files": [
+                                    "scripton_ndk.sh",
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                ],
+                                "md5sums": [
+                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "ndk_translation-chromeos_guybrush",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_guybrush",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware",
+                                "version": "R119-15633.69.0",
+                                "path": "ndk_translation-chromeos_guybrush-R119-15633.69.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "android_version": "11",
+                                "files": [
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                ],
+                                "md5sums": [
+                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
                         ]
                     }
                 ]
             },
             {
-                "path": "smartdock",
+                "name": "houdini",
+                "description": "Intel's libhoudini, for Intel/AMD X86 CPU",
+                "path": "houdini",
                 "list": [
                     {
-                        "name": "smartdock",
-                        "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
-                        "version": "1.12.1",
-                        "path": "smartdock-1121",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "prop.json",
-                            "permissions_cu.axel.smartdock.xml",
-                            "smartdock.rc"
-                        ],
-                        "provides": [
-                            "smartdock",
-                            "launcher"
-                        ],
-                        "conflicts": [
-                            "launcher"
-                        ],
-                        "source": [
-                            "smartdock-1.12.1.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk"
-                        ],
-                        "md5sums": [
-                            "dde94e2babc5f78bf7279e60a98eef05"
+                        "path": "houdini-wsa11-patched",
+                        "list": [
+                            {
+                                "name": "houdini-wsa11-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
+                                "version": "38765",
+                                "path": "houdini-wsa11-patched-38765",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
+                                "android_version": "11",
+                                "files": [
+                                    "scripton.sh",
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                ],
+                                "md5sums": [
+                                    "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-wsa11",
+                        "list": [
+                            {
+                                "name": "houdini-wsa11",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image",
+                                "version": "38765",
+                                "path": "houdini-wsa11-38765",
+                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-wsa11-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                ],
+                                "md5sums": [
+                                    "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-chromeos_brya",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_brya",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
+                                "version": "38795",
+                                "path": "houdini-chromeos_brya-38795",
+                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                ],
+                                "md5sums": [
+                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-chromeos_brya-patched",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_brya-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
+                                "version": "38795",
+                                "path": "houdini-chromeos_brya-patched-38795",
+                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "scripton.sh",
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_brya-patched-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                ],
+                                "md5sums": [
+                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MicroG",
+        "description": "A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries",
+        "path": "microg",
+        "list": [
+            {
+                "name": "MinMicroG",
+                "description": "This is a simple MicroG installer",
+                "path": "MinMicroG",
+                "list": [
+                    {
+                        "path": "standard",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Standard",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.install",
+                                    "microg.rc",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Standard-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Standard-UPDATELY-20240613004613.zip"
+                                ],
+                                "md5sums": [
+                                    "82268a3035356152787aadd7ae03ee8a"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "nogoolag",
+                        "list": [
+                            {
+                                "name": "MinMicroG-NoGoolag",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.install",
+                                    "microg.rc",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-NoGoolag-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip"
+                                ],
+                                "md5sums": [
+                                    "eedb4eee533b525e4f7a018c699b6b6b"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "minimal",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Minimal",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.install",
+                                    "microg.rc",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Minimal-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip"
+                                ],
+                                "md5sums": [
+                                    "5a8fbcfd13e732194efafe84368a855d"
+                                ]
+                            }
                         ]
                     }
                 ]
@@ -72,65 +334,6 @@
         "description": "Third-party Google Apps packages for Android custom ROMs, providing essential Google services and applications",
         "path": "gapps",
         "list": [
-            {
-                "name": "LiteGapps",
-                "description": "litegapps is a google apps package that supports almost all arch and android versions while maintaining lightness, saving battery and more.",
-                "path": "litegapps",
-                "list": [
-                    {
-                        "path": "lite",
-                        "list": [
-                            {
-                                "name": "LiteGapps-Lite",
-                                "description": "LiteGapps Lite is a small and light version of google apps.",
-                                "version": "202401102",
-                                "path": "11.0_20241102",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION"
-                                ],
-                                "provides": [
-                                    "gapps"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source_x86_64": [
-                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86_64-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_x86": [
-                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_arm64": [
-                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm64-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_arm": [
-                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm-11.0-20241102-unofficial.zip"
-                                ],
-                                "md5sums_x86_64": [
-                                    "628180d6bd49648ed35a636ee4554224"
-                                ],
-                                "md5sums_x86": [
-                                    "0ad414f2f0e421037317ea235d45da4b"
-                                ],
-                                "md5sums_arm64": [
-                                    "640e81d6b15c204adea164fcdc5b9df8"
-                                ],
-                                "md5sums_arm": [
-                                    "ab70cfcbd6f6fed356d7592c4d9500d1"
-                                ],
-                                "arch": [
-                                    "x86_64",
-                                    "x86",
-                                    "arm64",
-                                    "arm"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
             {
                 "path": "opengapps",
                 "list": [
@@ -217,6 +420,65 @@
                 ]
             },
             {
+                "name": "LiteGapps",
+                "description": "litegapps is a google apps package that supports almost all arch and android versions while maintaining lightness, saving battery and more.",
+                "path": "litegapps",
+                "list": [
+                    {
+                        "path": "lite",
+                        "list": [
+                            {
+                                "name": "LiteGapps-Lite",
+                                "description": "LiteGapps Lite is a small and light version of google apps.",
+                                "version": "202401102",
+                                "path": "11.0_20241102",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "gapps"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source_x86_64": [
+                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86_64-11.0-20241102-unofficial.zip"
+                                ],
+                                "source_x86": [
+                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86-11.0-20241102-unofficial.zip"
+                                ],
+                                "source_arm64": [
+                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm64-11.0-20241102-unofficial.zip"
+                                ],
+                                "source_arm": [
+                                    "LiteGapps-Lite-202401102.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm-11.0-20241102-unofficial.zip"
+                                ],
+                                "md5sums_x86_64": [
+                                    "628180d6bd49648ed35a636ee4554224"
+                                ],
+                                "md5sums_x86": [
+                                    "0ad414f2f0e421037317ea235d45da4b"
+                                ],
+                                "md5sums_arm64": [
+                                    "640e81d6b15c204adea164fcdc5b9df8"
+                                ],
+                                "md5sums_arm": [
+                                    "ab70cfcbd6f6fed356d7592c4d9500d1"
+                                ],
+                                "arch": [
+                                    "x86_64",
+                                    "x86",
+                                    "arm64",
+                                    "arm"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "path": "mindthegapps",
                 "list": [
                     {
@@ -271,423 +533,6 @@
         ]
     },
     {
-        "name": "Arm Translation",
-        "description": "Proprietary software to run ARM applications on X86 machines",
-        "path": "arm_translation",
-        "list": [
-            {
-                "name": "ndk_translation",
-                "description": "Google's ndk_translation for Intel/AMD x86 CPU",
-                "path": "ndk_translation",
-                "list": [
-                    {
-                        "path": "ndk_translation-chromeos_guybrush-patched",
-                        "list": [
-                            {
-                                "name": "ndk_translation-chromeos_guybrush-patched",
-                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
-                                "version": "R119-15633.69.0",
-                                "path": "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0",
-                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
-                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "prop.json",
-                                    "scripton_ndk.sh"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
-                                ],
-                                "md5sums": [
-                                    "6d4b3788ac9e7e953aada561f64a2563"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "ndk_translation-chromeos_guybrush",
-                        "list": [
-                            {
-                                "name": "ndk_translation-chromeos_guybrush",
-                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware",
-                                "version": "R119-15633.69.0",
-                                "path": "ndk_translation-chromeos_guybrush-R119-15633.69.0",
-                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
-                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "prop.json"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
-                                ],
-                                "md5sums": [
-                                    "6d4b3788ac9e7e953aada561f64a2563"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "houdini",
-                "description": "Intel's libhoudini, for Intel/AMD X86 CPU",
-                "path": "houdini",
-                "list": [
-                    {
-                        "path": "houdini-wsa11-patched",
-                        "list": [
-                            {
-                                "name": "houdini-wsa11-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
-                                "version": "38765",
-                                "path": "houdini-wsa11-patched-38765",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "houdini.rc",
-                                    "scripton.sh",
-                                    "prop.json"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
-                                ],
-                                "md5sums": [
-                                    "5554b11cba905058c3d9bb5e45535d83"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-chromeos_brya-patched",
-                        "list": [
-                            {
-                                "name": "houdini-chromeos_brya-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
-                                "version": "38795",
-                                "path": "houdini-chromeos_brya-patched-38795",
-                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "houdini.rc",
-                                    "scripton.sh",
-                                    "prop.json"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-chromeos_brya-patched-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
-                                ],
-                                "md5sums": [
-                                    "b3c745de3c7d332169c7b5d4c286a4fb"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-wsa11",
-                        "list": [
-                            {
-                                "name": "houdini-wsa11",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image",
-                                "version": "38765",
-                                "path": "houdini-wsa11-38765",
-                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "houdini.rc",
-                                    "prop.json"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-wsa11-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
-                                ],
-                                "md5sums": [
-                                    "5554b11cba905058c3d9bb5e45535d83"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-chromeos_brya",
-                        "list": [
-                            {
-                                "name": "houdini-chromeos_brya",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
-                                "version": "38795",
-                                "path": "houdini-chromeos_brya-38795",
-                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "EXTENSION",
-                                    "houdini.rc",
-                                    "prop.json"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
-                                ],
-                                "md5sums": [
-                                    "b3c745de3c7d332169c7b5d4c286a4fb"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "MicroG",
-        "description": "A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries",
-        "path": "microg",
-        "list": [
-            {
-                "name": "MinMicroG",
-                "description": "This is a simple MicroG installer",
-                "path": "MinMicroG",
-                "list": [
-                    {
-                        "path": "nogoolag",
-                        "list": [
-                            {
-                                "name": "MinMicroG-NoGoolag",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-NoGoolag-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip"
-                                ],
-                                "md5sums": [
-                                    "eedb4eee533b525e4f7a018c699b6b6b"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "standard",
-                        "list": [
-                            {
-                                "name": "MinMicroG-Standard",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Standard-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Standard-UPDATELY-20240613004613.zip"
-                                ],
-                                "md5sums": [
-                                    "82268a3035356152787aadd7ae03ee8a"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "minimal",
-                        "list": [
-                            {
-                                "name": "MinMicroG-Minimal",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Minimal-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip"
-                                ],
-                                "md5sums": [
-                                    "5a8fbcfd13e732194efafe84368a855d"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Root Manager",
-        "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
-        "path": "root",
-        "list": [
-            {
-                "path": "magisk-delta",
-                "list": [
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "25210-fdac22ba",
-                        "path": "magisk-delta-25210",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-25210-fdac22ba.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "ec98dcee84a47785dc551eb7c465b25f"
-                        ]
-                    },
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "27001-R6687BB53",
-                        "path": "magisk-delta-27001",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-27001-R6687BB53.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "664cf8ceb7eda13fcb9fd5ad16e62f54"
-                        ]
-                    },
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "26105-d2a66567",
-                        "path": "magisk-delta-26105",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "47fdc4dcd7cdff81fe73e3e39cb4e82b"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "Other",
         "description": "Some stuff that might be useful",
         "path": "other",
@@ -715,6 +560,161 @@
                         ],
                         "md5sums": [
                             "ff2fe63ddfb4b035e6720a1b195b2355"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Root Manager",
+        "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
+        "path": "root",
+        "list": [
+            {
+                "path": "magisk-delta",
+                "list": [
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "27001-R6687BB53",
+                        "path": "magisk-delta-27001",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "magisk-delta.install",
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-27001-R6687BB53.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "664cf8ceb7eda13fcb9fd5ad16e62f54"
+                        ]
+                    },
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "26105-d2a66567",
+                        "path": "magisk-delta-26105",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "magisk-delta.install",
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "47fdc4dcd7cdff81fe73e3e39cb4e82b"
+                        ]
+                    },
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "25210-fdac22ba",
+                        "path": "magisk-delta-25210",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "magisk-delta.install",
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-25210-fdac22ba.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "ec98dcee84a47785dc551eb7c465b25f"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Launchers",
+        "description": "Android launchers offer customizable home screens for personalized device appearance and functionality",
+        "path": "launcher",
+        "list": [
+            {
+                "path": "smartdock",
+                "list": [
+                    {
+                        "name": "smartdock",
+                        "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
+                        "version": "1.12.1",
+                        "path": "smartdock-1121",
+                        "android_version": "11",
+                        "files": [
+                            "smartdock.rc",
+                            "permissions_cu.axel.smartdock.xml",
+                            "prop.json",
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "smartdock",
+                            "launcher"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "smartdock-1.12.1.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk"
+                        ],
+                        "md5sums": [
+                            "dde94e2babc5f78bf7279e60a98eef05"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "kvaesitso",
+                "list": [
+                    {
+                        "name": "kvaesitso",
+                        "description": "A search-focused Android launcher",
+                        "version": "1.31.2",
+                        "path": "kvaesitso-1312",
+                        "android_version": "11",
+                        "files": [
+                            "kvaesitso.rc",
+                            "prop.json",
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "launcher",
+                            "kvaesitso"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+                        ],
+                        "md5sums": [
+                            "b35ebd52cb2ee0f010425e06907934ac"
                         ]
                     }
                 ]

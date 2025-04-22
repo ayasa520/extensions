@@ -1,0 +1,19 @@
+name=houdini-chromeos_octopus
+version=39489
+description="Intel's libhoudini for Intel x86 CPU, pulled from ChromeOS's arcvm image for volteer Chromebooks"
+provides=("arm_translaton")
+conflicts=("arm_translaton")
+_commit="5643480a2c504bd0ee4739a6354fefc70d032ad4"
+_repo="vendor_intel_proprietary_houdini"
+source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
+md5sums=("9085a6ec5d0ec5b7b715981676ffee18")
+android_version=13
+arch=("x86_64")
+
+package() {
+    cd $srcdir/..
+    mkdir -p $pkgdir/system
+    unzip ${name}-${version}.zip -d $srcdir
+    cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
+    install -Dm644 houdini.rc $pkgdir/system/etc/init/
+}

@@ -1,0 +1,7 @@
+on property:sys.boot_completed=1
+    start microg_service
+
+service microg_service /system/bin/sh /system/bin/npem
+    user root
+    group root
+    oneshot

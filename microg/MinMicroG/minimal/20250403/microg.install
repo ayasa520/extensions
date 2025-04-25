@@ -1,0 +1,10 @@
+pre_install:
+  - rm_apk: ["com.google.android.gms", "com.android.vending"]
+  - rm_data: 
+    - "data/com.google.android.gms"
+    - "data/com.android.vending"
+post_remove:
+  - rm_apk: ["com.google.android.gms", "com.android.vending"]
+  - rm_data: 
+    - "data/com.google.android.gms"
+    - "data/com.android.vending"

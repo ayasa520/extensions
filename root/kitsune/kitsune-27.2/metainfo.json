@@ -1,0 +1,18 @@
+{
+    "name": "Kitsune", 
+    "version": "27.2", 
+    "description": "A fork of KitsuneMagisk, with some patches applied to make it work with Waydroid.", 
+    "provides": [
+        "magisk"
+    ], 
+    "conflicts": [
+        "magisk"
+    ], 
+    "source": [
+        "Kitsune-27.2.apk::https://github.com/ayasa520/KitsuneMagisk/releases/download/ea3f64a/app-debug.apk"
+    ], 
+    "md5sums": [
+        "36a906be869ff6e877aff8bdc5a405d6"
+    ], 
+    "install": "Kitsune.install"
+}

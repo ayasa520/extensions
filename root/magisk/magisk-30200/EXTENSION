@@ -1,0 +1,59 @@
+name=Magisk
+version="30200"
+description="The Magic Mask for Android"
+provides=("magisk")
+conflicts=("magisk")
+source=("${name}-${version}.apk::https://github.com/ayasa520/Magisk/releases/download/debug-7be6d81-30200/Magisk-7be6d81-30200-debug.apk")
+md5sums=("834b0f063ea713bea48b92c7d5648ce9")
+sha256sum=("da4df4121e86f792159778ad3c9570a6ead86f55ee6f94ffc2e33b2983e62273")
+install="${name}.install"
+
+package() {
+    magisk_dir="$pkgdir/system/etc/init/magisk"
+    case "$CARCH" in
+        x86)
+            mapped_arch="x86"
+            bit=32
+        ;;
+        x86_64)
+            mapped_arch="x86_64"
+            bit=64
+        ;;
+        arm)
+            mapped_arch="armeabi-v7a"
+            bit=32
+        ;;
+        arm64)
+            mapped_arch="arm64-v8a"
+            bit=64
+        ;;
+        *)
+            echo "Error: Unknown architecture '$CARCH'" >&2
+            exit 1
+        ;;
+    esac
+
+    lib_dir="$srcdir/lib/$mapped_arch"
+    mkdir -p "$magisk_dir"
+    mkdir -p "$pkgdir/sbin"
+    unzip "${name}-${version}.apk" -d "$srcdir"
+    
+    install -Dm755 "$lib_dir/libbusybox.so" "$magisk_dir/busybox"
+    install -Dm755 "$lib_dir/libmagisk.so" "$magisk_dir/magisk"
+    install -Dm755 "$lib_dir/libmagiskboot.so" "$magisk_dir/magiskboot"
+    install -Dm755 "$lib_dir/libmagiskinit.so" "$magisk_dir/magiskinit"
+    install -Dm755 "$lib_dir/libmagiskpolicy.so" "$magisk_dir/magiskpolicy"
+    install -Dm755 "$srcdir/assets/chromeos/futility" "$magisk_dir/chromeos/futility"
+    install -Dm755 "$srcdir/assets/chromeos/kernel.keyblock" "$magisk_dir/chromeos/kernel.keyblock"
+    install -Dm755 "$srcdir/assets/chromeos/kernel_data_key.vbprivk" "$magisk_dir/chromeos/kernel_data_key.vbprivk"
+    install -Dm755 "$srcdir/assets/addon.d.sh" "$magisk_dir/addon.d.sh"
+    install -Dm755 "$srcdir/assets/boot_patch.sh" "$magisk_dir/boot_patch.sh"
+    install -Dm755 "$srcdir/assets/stub.apk" "$magisk_dir/stub.apk"
+    install -Dm755 "$srcdir/assets/util_functions.sh" "$magisk_dir/util_functions.sh"
+    install -Dm644 bootanim.rc "$pkgdir/system/etc/init/bootanim.rc"
+    install -Dm755 "${name}-${version}.apk" "$magisk_dir/magisk.apk"
+
+    sed -e "s/\$MAGISKSYSTEMDIR/\/system\/etc\/init\/magisk/g" -e "s/\$MAGISKTMP/\/sbin/g" -e "s/\$magisk_name/magisk/g" -i "$pkgdir/system/etc/init/bootanim.rc"
+    
+    chown 2000:root -R "$magisk_dir"
+}

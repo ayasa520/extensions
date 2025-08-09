@@ -1,0 +1,30 @@
+pre_install:
+  - rm_apk: ["com.topjohnwu.magisk"]
+  - rm_overlay_rw:
+      [
+        "system/system/etc/init/bootanim.rc",
+        "system/system/etc/init/bootanim.rc.gz",
+        "system/system/etc/init/magisk",
+        "system/system/addon.d/99-magisk.sh",
+        "vendor/etc/selinux/precompiled_sepolicy",
+        "system/root/.magisk",
+        "system/sbin/.magisk",
+      ]
+  - rm_data: ["adb/magisk", "adb/magisk.db", "data/com.topjohnwu.magisk"]
+post_install:
+  - cp_to_data:
+      src: "$pkgdir/system/etc/init/magisk"
+      dest: "adb/"
+post_remove:
+  - rm_overlay_rw:
+      [
+        "system/system/etc/init/bootanim.rc",
+        "system/system/etc/init/bootanim.rc.gz",
+        "system/system/etc/init/magisk",
+        "system/system/addon.d/99-magisk.sh",
+        "vendor/etc/selinux/precompiled_sepolicy",
+        "system/root/.magisk",
+        "system/sbin/.magisk",
+      ]
+  - rm_data: ["adb/magisk", "adb/magisk.db", "data/com.topjohnwu.magisk"]
+  - rm_apk: ["com.topjohnwu.magisk"]

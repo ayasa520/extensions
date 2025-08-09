@@ -1,0 +1,21 @@
+{
+    "name": "Magisk", 
+    "version": "30200", 
+    "description": "The Magic Mask for Android", 
+    "provides": [
+        "magisk"
+    ], 
+    "conflicts": [
+        "magisk"
+    ], 
+    "source": [
+        "Magisk-30200.apk::https://github.com/ayasa520/Magisk/releases/download/debug-7be6d81-30200/Magisk-7be6d81-30200-debug.apk"
+    ], 
+    "md5sums": [
+        "834b0f063ea713bea48b92c7d5648ce9"
+    ], 
+    "sha256sum": [
+        "da4df4121e86f792159778ad3c9570a6ead86f55ee6f94ffc2e33b2983e62273"
+    ], 
+    "install": "Magisk.install"
+}

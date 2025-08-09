@@ -3,8 +3,7 @@
     "version": "1.12.1",
     "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
     "provides": [
-        "smartdock",
-        "launcher"
+        "smartdock launcher"
     ],
     "conflicts": [
         "launcher"
@@ -14,6 +13,9 @@
     ],
     "md5sums": [
         "dde94e2babc5f78bf7279e60a98eef05"
+    ],
+    "sha256sums": [
+        "e63e49f42eebdb7049c2d55bd7daf8b78ab98baade00a83f425fce95e5790f0d"
     ],
     "android_version": "11"
 }

@@ -7,6 +7,7 @@ _commit="0488b666dfdb5378b98067aea50b4508db12ce3a"
 _repo="vendor_intel_proprietary_houdini"
 source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
 md5sums=("b3c745de3c7d332169c7b5d4c286a4fb")
+sha256sums=("433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f")
 android_version=11
 arch=("x86_64")
 

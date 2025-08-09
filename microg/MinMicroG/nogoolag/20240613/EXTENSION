@@ -5,6 +5,7 @@ provides=("microg")
 conflicts=("gapps" "microg")
 source=("${name}-${version}.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip")
 md5sums=("eedb4eee533b525e4f7a018c699b6b6b")
+sha256sums=("e1497e884d175338c4d250a6cc79a131482c4b5810a34b96d3d60bc2665c54f6")
 install="microg.install"
 
 package() {

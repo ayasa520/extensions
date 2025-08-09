@@ -11,6 +11,10 @@ md5sums_x86_64=("628180d6bd49648ed35a636ee4554224")
 md5sums_x86=("0ad414f2f0e421037317ea235d45da4b")
 md5sums_arm64=("640e81d6b15c204adea164fcdc5b9df8")
 md5sums_arm=("ab70cfcbd6f6fed356d7592c4d9500d1")
+sha256sums_x86_64=("9dabcd8af1b22c0b00caeb2fecf493939c694b328a3a1f0243dc2ae08a47f869")
+sha256sums_x86=("1d382d01f0a9e3e797c1731e93607948ec72d719ce8d3be6a60d1aefa0db22f2")
+sha256sums_arm64=("4efc071de5ccdd5fb91d91ed0b084bdf8be49b0cf9f34767c1f9738d8228e8cf")
+sha256sums_arm=("fb4a50084326cd28acdb43b865f1a3c43f2e11ea314cc1fd6cf7965866712103")
 android_version=11
 arch=("x86_64" "x86" "arm64" "arm")
 

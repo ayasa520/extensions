@@ -1,22 +1,25 @@
 {
-    "name": "houdini-chromeos_brya", 
-    "version": "38795", 
-    "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks", 
+    "name": "houdini-chromeos_brya",
+    "version": "38795",
+    "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
     "provides": [
         "arm_translaton"
-    ], 
+    ],
     "conflicts": [
         "arm_translaton"
-    ], 
-    "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a", 
-    "_repo": "vendor_intel_proprietary_houdini", 
+    ],
+    "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+    "_repo": "vendor_intel_proprietary_houdini",
     "source": [
         "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
-    ], 
+    ],
     "md5sums": [
         "b3c745de3c7d332169c7b5d4c286a4fb"
-    ], 
-    "android_version": "11", 
+    ],
+    "sha256sums": [
+        "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
+    ],
+    "android_version": "11",
     "arch": [
         "x86_64"
     ]

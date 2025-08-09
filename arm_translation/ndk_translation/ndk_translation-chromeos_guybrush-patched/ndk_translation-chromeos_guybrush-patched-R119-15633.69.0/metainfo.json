@@ -1,22 +1,25 @@
 {
-    "name": "ndk_translation-chromeos_guybrush-patched", 
-    "version": "R119-15633.69.0", 
-    "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch", 
+    "name": "ndk_translation-chromeos_guybrush-patched",
+    "version": "R119-15633.69.0",
+    "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
     "provides": [
         "arm_translaton"
-    ], 
+    ],
     "conflicts": [
         "arm_translaton"
-    ], 
-    "_repo": "vendor_google_proprietary_ndk_translation-prebuilt", 
-    "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc", 
+    ],
+    "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+    "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
     "source": [
         "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
-    ], 
+    ],
     "md5sums": [
         "6d4b3788ac9e7e953aada561f64a2563"
-    ], 
-    "android_version": "11", 
+    ],
+    "sha256sums": [
+        "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+    ],
+    "android_version": "11",
     "arch": [
         "x86_64"
     ]

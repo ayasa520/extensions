@@ -5,6 +5,7 @@ provides=("smartdock launcher")
 conflicts=("launcher")
 source=("${name}-${version}.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk")
 md5sums=("dde94e2babc5f78bf7279e60a98eef05")
+sha256sums=("e63e49f42eebdb7049c2d55bd7daf8b78ab98baade00a83f425fce95e5790f0d")
 android_version=11
 
 package() {

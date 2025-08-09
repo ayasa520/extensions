@@ -1,22 +1,25 @@
 {
-    "name": "ndk_translation-chromeos_zork", 
-    "version": "R125-15853.53.0", 
-    "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware", 
+    "name": "ndk_translation-chromeos_zork",
+    "version": "R125-15853.53.0",
+    "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware",
     "provides": [
         "arm_translaton"
-    ], 
+    ],
     "conflicts": [
         "arm_translaton"
-    ], 
-    "_repo": "vendor_google_proprietary_ndk_translation-prebuilt", 
-    "_commit": "faece8cc787a520193545116501cad40534063fc", 
+    ],
+    "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+    "_commit": "faece8cc787a520193545116501cad40534063fc",
     "source": [
         "ndk_translation-chromeos_zork-R125-15853.53.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/faece8cc787a520193545116501cad40534063fc.zip"
-    ], 
+    ],
     "md5sums": [
         "f7605b31e51eaa69f13b508b20e74d10"
-    ], 
-    "android_version": "13", 
+    ],
+    "sha256sums": [
+        "235b31e75cd62fe18a6d11f4772df096c767d0d0252ef7eb7a2aeb56448ba915"
+    ],
+    "android_version": "13",
     "arch": [
         "x86_64"
     ]

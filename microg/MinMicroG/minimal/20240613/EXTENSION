@@ -5,6 +5,7 @@ provides=("microg")
 conflicts=("gapps" "microg")
 source=("${name}-${version}.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip")
 md5sums=("5a8fbcfd13e732194efafe84368a855d")
+sha256sums=("4ba36563f95e476d527d424d6c50ec0d4a3eb054f0aaec734cdd0600ad1e6177")
 install="microg.install"
 
 package() {

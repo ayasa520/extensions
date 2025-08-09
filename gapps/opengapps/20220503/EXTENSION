@@ -9,6 +9,9 @@ source_arm64=("${name}-${version}.zip::https://sourceforge.net/projects/opengapp
 md5sums_x86_64=("5a6d242be34ad1acf92899c7732afa1b")
 md5sums_x86=("efda4943076016d00b40e0874b12ddd3")
 md5sums_arm64=("67e927e4943757f418e4f934825cf987")
+sha256sums_x86_64=("a0b0734eb8053ceba7d076456bb642350805c95b0c4c38f402e65936c2cdcfb0")
+sha256sums_x86=("d581bd5eac8fe0929fe277f5ecc2513ed21707c26af1716a1ae28c8b7f2d0ce5")
+sha256sums_arm64=("11c4ff4db8ce7a7876f7d30bec46d853e52b82cc702aa717b421a2602988112b")
 android_version=11
 arch=("x86_64" "x86" "arm64")
 

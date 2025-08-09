@@ -1,19 +1,22 @@
 {
-    "name": "magisk-delta", 
-    "version": "26105-d2a66567", 
-    "description": "Magisk delta is a forked version of the original Magisk", 
+    "name": "magisk-delta",
+    "version": "26105-d2a66567",
+    "description": "Magisk delta is a forked version of the original Magisk",
     "provides": [
         "magisk"
-    ], 
+    ],
     "conflicts": [
         "magisk"
-    ], 
+    ],
     "source": [
         "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-    ], 
+    ],
     "md5sums": [
         "47fdc4dcd7cdff81fe73e3e39cb4e82b"
-    ], 
-    "install": "magisk-delta.install", 
+    ],
+    "sha256sums": [
+        "c13ae33623835fec3302fe43d9f7d74562022a47995a52e3d7a8f02e6be2d7c2"
+    ],
+    "install": "magisk-delta.install",
     "android_version": "11"
 }

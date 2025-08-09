@@ -5,6 +5,7 @@ provides=("hidestatusbar")
 conflicts=("hidestatusbar")
 source=("${name}-${version}.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.2/app-release.apk")
 md5sums=("ff2fe63ddfb4b035e6720a1b195b2355")
+sha256sums=("e55bae9ef51de5d2e6512564b25866039b42a32cb0a7aaddcd6f4fce7c34a2e3")
 android_version=11
 
 package() {

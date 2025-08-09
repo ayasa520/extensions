@@ -1,43 +1,55 @@
 {
-    "name": "MindTheGapps", 
-    "version": "20240619", 
-    "description": "GApps for android devices", 
+    "name": "MindTheGapps",
+    "version": "20240619",
+    "description": "GApps for android devices",
     "provides": [
         "gapps"
-    ], 
+    ],
     "conflicts": [
-        "gapps", 
+        "gapps",
         "microg"
-    ], 
+    ],
     "source_x86_64": [
         "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86_64-20240619.zip"
-    ], 
+    ],
     "source_x86": [
         "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-x86-20240619.zip"
-    ], 
+    ],
     "source_arm64": [
         "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm64-20240619.zip"
-    ], 
+    ],
     "source_arm": [
         "MindTheGapps-20240619.zip::https://github.com/s1204IT/MindTheGappsBuilder/releases/download/20240619/MindTheGapps-13.0.0-arm-20240619.zip"
-    ], 
+    ],
     "md5sums_x86_64": [
         "25927de9f175e1db6647ccb62c5503ce"
-    ], 
+    ],
     "md5sums_x86": [
         "821ae859631f3d22190831e28ffcc71d"
-    ], 
+    ],
     "md5sums_arm64": [
         "4205fb7a6313ddc595cb41ad7d850474"
-    ], 
+    ],
     "md5sums_arm": [
         "ec7aa5efc9e449b101bc2ee7448a49bf"
-    ], 
-    "android_version": "13", 
+    ],
+    "sha256sums_x86_64": [
+        "a5b82ef50974d83df1a635556039fc625a0ab88d4fb3911d806de6168ce21bb6"
+    ],
+    "sha256sums_x86": [
+        "749eaee3750936e4f11a41e503e638786071161a1da27c61b78923c1ed7998ac"
+    ],
+    "sha256sums_arm64": [
+        "44bd297bea0b3b7f6b36f295b429c8bdce432eba55ec1ddd74f6920e22f65ff8"
+    ],
+    "sha256sums_arm": [
+        "6f4d2849a4c0135008ce5055f166910bba947edab4e7e616ba12dbc517c090f2"
+    ],
+    "android_version": "13",
     "arch": [
-        "x86_64", 
-        "x86", 
-        "arm64", 
+        "x86_64",
+        "x86",
+        "arm64",
         "arm"
     ]
 }

@@ -52,6 +52,18 @@
                                 "md5sums_arm": [
                                     "ab70cfcbd6f6fed356d7592c4d9500d1"
                                 ],
+                                "sha256sums_x86_64": [
+                                    "9dabcd8af1b22c0b00caeb2fecf493939c694b328a3a1f0243dc2ae08a47f869"
+                                ],
+                                "sha256sums_x86": [
+                                    "1d382d01f0a9e3e797c1731e93607948ec72d719ce8d3be6a60d1aefa0db22f2"
+                                ],
+                                "sha256sums_arm64": [
+                                    "4efc071de5ccdd5fb91d91ed0b084bdf8be49b0cf9f34767c1f9738d8228e8cf"
+                                ],
+                                "sha256sums_arm": [
+                                    "fb4a50084326cd28acdb43b865f1a3c43f2e11ea314cc1fd6cf7965866712103"
+                                ],
                                 "arch": [
                                     "x86_64",
                                     "x86",
@@ -106,6 +118,18 @@
                         "md5sums_arm": [
                             "ec7aa5efc9e449b101bc2ee7448a49bf"
                         ],
+                        "sha256sums_x86_64": [
+                            "a5b82ef50974d83df1a635556039fc625a0ab88d4fb3911d806de6168ce21bb6"
+                        ],
+                        "sha256sums_x86": [
+                            "749eaee3750936e4f11a41e503e638786071161a1da27c61b78923c1ed7998ac"
+                        ],
+                        "sha256sums_arm64": [
+                            "44bd297bea0b3b7f6b36f295b429c8bdce432eba55ec1ddd74f6920e22f65ff8"
+                        ],
+                        "sha256sums_arm": [
+                            "6f4d2849a4c0135008ce5055f166910bba947edab4e7e616ba12dbc517c090f2"
+                        ],
                         "arch": [
                             "x86_64",
                             "x86",
@@ -152,6 +176,15 @@
                         "md5sums_arm": [
                             "8719519fa32ae83a62621c6056d32814"
                         ],
+                        "sha256sums_x86_64": [
+                            "b31101c17923caa16f86cabbd769501fdb22f4b4b276cba3aa500bafba45d822"
+                        ],
+                        "sha256sums_arm64": [
+                            "722bf4395edc62c12ca521d71bb929157b714c240f2557a61d9a30969230ed36"
+                        ],
+                        "sha256sums_arm": [
+                            "4df52af6b0dcc0f21d6e1dd943ef3088121354179782b9d0d48593ff127b4cc0"
+                        ],
                         "arch": [
                             "x86_64",
                             "arm64",
@@ -192,6 +225,15 @@
                         "md5sums_arm64": [
                             "67e927e4943757f418e4f934825cf987"
                         ],
+                        "sha256sums_x86_64": [
+                            "a0b0734eb8053ceba7d076456bb642350805c95b0c4c38f402e65936c2cdcfb0"
+                        ],
+                        "sha256sums_x86": [
+                            "d581bd5eac8fe0929fe277f5ecc2513ed21707c26af1716a1ae28c8b7f2d0ce5"
+                        ],
+                        "sha256sums_arm64": [
+                            "11c4ff4db8ce7a7876f7d30bec46d853e52b82cc702aa717b421a2602988112b"
+                        ],
                         "arch": [
                             "x86_64",
                             "x86",
@@ -222,17 +264,19 @@
                             "EXTENSION"
                         ],
                         "provides": [
-                            "launcher",
-                            "kvaesitso"
+                            "launcher kvaesitso"
                         ],
                         "conflicts": [
                             "launcher"
                         ],
                         "source": [
-                            "Kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+                            "kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
                         ],
                         "md5sums": [
                             "b35ebd52cb2ee0f010425e06907934ac"
+                        ],
+                        "sha256sums": [
+                            "8373c6a44b70b44381cb34ca073f0f9b5c4c681cfd3d984ba6b8b11e7e533a3e"
                         ]
                     }
                 ]
@@ -253,8 +297,7 @@
                             "smartdock.rc"
                         ],
                         "provides": [
-                            "smartdock",
-                            "launcher"
+                            "smartdock launcher"
                         ],
                         "conflicts": [
                             "launcher"
@@ -264,6 +307,9 @@
                         ],
                         "md5sums": [
                             "dde94e2babc5f78bf7279e60a98eef05"
+                        ],
+                        "sha256sums": [
+                            "e63e49f42eebdb7049c2d55bd7daf8b78ab98baade00a83f425fce95e5790f0d"
                         ]
                     }
                 ]
@@ -298,6 +344,9 @@
                         ],
                         "md5sums": [
                             "ff2fe63ddfb4b035e6720a1b195b2355"
+                        ],
+                        "sha256sums": [
+                            "e55bae9ef51de5d2e6512564b25866039b42a32cb0a7aaddcd6f4fce7c34a2e3"
                         ]
                     }
                 ]
@@ -335,6 +384,9 @@
                         ],
                         "md5sums": [
                             "664cf8ceb7eda13fcb9fd5ad16e62f54"
+                        ],
+                        "sha256sums": [
+                            "9a670805dd52433214fb18cbebda5a428ae795bc46b2e995f0adc09b0d8c8397"
                         ]
                     },
                     {
@@ -360,6 +412,9 @@
                         ],
                         "md5sums": [
                             "ec98dcee84a47785dc551eb7c465b25f"
+                        ],
+                        "sha256sums": [
+                            "420d9b956fff28ed94d7e15fa45f1847f9e5d85fdcfa61f375aef0b962585d3c"
                         ]
                     },
                     {
@@ -385,6 +440,9 @@
                         ],
                         "md5sums": [
                             "47fdc4dcd7cdff81fe73e3e39cb4e82b"
+                        ],
+                        "sha256sums": [
+                            "c13ae33623835fec3302fe43d9f7d74562022a47995a52e3d7a8f02e6be2d7c2"
                         ]
                     }
                 ]
@@ -414,6 +472,9 @@
                         ],
                         "md5sums": [
                             "36a906be869ff6e877aff8bdc5a405d6"
+                        ],
+                        "sha256sums": [
+                            "f7ecfdc6b07d1b7f60fae5231427c37c05f5ed705d619696968b71f4846886af"
                         ]
                     }
                 ]
@@ -488,6 +549,9 @@
                                 ],
                                 "md5sums": [
                                     "5a8fbcfd13e732194efafe84368a855d"
+                                ],
+                                "sha256sums": [
+                                    "4ba36563f95e476d527d424d6c50ec0d4a3eb054f0aaec734cdd0600ad1e6177"
                                 ]
                             },
                             {
@@ -513,6 +577,9 @@
                                 ],
                                 "md5sums": [
                                     "bcef5a312851bebe8771c25270fd6aa7"
+                                ],
+                                "sha256sums": [
+                                    "c0253d6ca8af2083cd25f4da1cbf421c9a9aedc5c43d79317f43a55b1eda1392"
                                 ]
                             }
                         ]
@@ -543,6 +610,9 @@
                                 ],
                                 "md5sums": [
                                     "eedb4eee533b525e4f7a018c699b6b6b"
+                                ],
+                                "sha256sums": [
+                                    "e1497e884d175338c4d250a6cc79a131482c4b5810a34b96d3d60bc2665c54f6"
                                 ]
                             },
                             {
@@ -568,6 +638,9 @@
                                 ],
                                 "md5sums": [
                                     "044c59458e4dd420083f5cc712bc160a"
+                                ],
+                                "sha256sums": [
+                                    "8a35e0308c5bd873b2b4dd025ad849087da07294a68ad07b0fe72c3a072fb250"
                                 ]
                             }
                         ]
@@ -598,6 +671,9 @@
                                 ],
                                 "md5sums": [
                                     "82268a3035356152787aadd7ae03ee8a"
+                                ],
+                                "sha256sums": [
+                                    "5c48e2f8c6c03d95e1f66d071b8679c7f4dc3307b5efa031859f03441e7dff43"
                                 ]
                             },
                             {
@@ -623,6 +699,9 @@
                                 ],
                                 "md5sums": [
                                     "cdef3222aba13e192b9c6f46b18c42fa"
+                                ],
+                                "sha256sums": [
+                                    "3b92ad7de16c1c538239dc8a3a747254b8bd0fdfe744bd2963dde2aa9d0ad785"
                                 ]
                             }
                         ]
@@ -668,6 +747,9 @@
                                 "md5sums": [
                                     "6d4b3788ac9e7e953aada561f64a2563"
                                 ],
+                                "sha256sums": [
+                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+                                ],
                                 "arch": [
                                     "x86_64"
                                 ]
@@ -702,6 +784,9 @@
                                 "md5sums": [
                                     "6d4b3788ac9e7e953aada561f64a2563"
                                 ],
+                                "sha256sums": [
+                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+                                ],
                                 "arch": [
                                     "x86_64"
                                 ]
@@ -734,6 +819,9 @@
                                 ],
                                 "md5sums": [
                                     "f7605b31e51eaa69f13b508b20e74d10"
+                                ],
+                                "sha256sums": [
+                                    "235b31e75cd62fe18a6d11f4772df096c767d0d0252ef7eb7a2aeb56448ba915"
                                 ],
                                 "arch": [
                                     "x86_64"
@@ -776,6 +864,9 @@
                                 "md5sums": [
                                     "9085a6ec5d0ec5b7b715981676ffee18"
                                 ],
+                                "sha256sums": [
+                                    "8464456aa108ee50205ed9e530b109cb4ebdc603f0b41471de5867cd13b1dfc3"
+                                ],
                                 "arch": [
                                     "x86_64"
                                 ]
@@ -809,6 +900,9 @@
                                 ],
                                 "md5sums": [
                                     "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ],
+                                "sha256sums": [
+                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
                                 ],
                                 "arch": [
                                     "x86_64"
@@ -845,6 +939,9 @@
                                 "md5sums": [
                                     "b3c745de3c7d332169c7b5d4c286a4fb"
                                 ],
+                                "sha256sums": [
+                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
+                                ],
                                 "arch": [
                                     "x86_64"
                                 ]
@@ -878,6 +975,9 @@
                                 ],
                                 "md5sums": [
                                     "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "sha256sums": [
+                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
                                 ],
                                 "arch": [
                                     "x86_64"
@@ -913,6 +1013,9 @@
                                 ],
                                 "md5sums": [
                                     "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "sha256sums": [
+                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
                                 ],
                                 "arch": [
                                     "x86_64"

@@ -1,0 +1,89 @@
+name: Update SHA256 Checksums and Metadata
+
+on:
+  workflow_dispatch:  # Allow manual trigger only
+
+jobs:
+  update-checksums:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0  # Fetch full history
+
+    - name: Pull latest changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git pull origin ${{ github.ref_name }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+
+    - name: Update SHA256 checksums and generate metainfo.json
+      run: |
+        python3 add_sha256.py .
+
+    - name: Run gather_meta.py to update extensions.json
+      run: |
+        python3 gather_meta.py
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if git diff --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "changes=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+        # Pull any changes that might have occurred during processing
+        git pull origin ${{ github.ref_name }} --rebase
+
+        # Add and commit changes
+        git add .
+        git commit -m 'Update SHA256 checksums and metadata
+
+        - Added SHA256 checksums to EXTENSION files
+        - Regenerated metainfo.json files
+        - Updated extensions.json'
+
+        # Push changes
+        git push origin ${{ github.ref_name }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create summary
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        echo "## ✅ Successfully updated checksums and metadata" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Changes made:" >> $GITHUB_STEP_SUMMARY
+        echo "- Added SHA256 checksums to EXTENSION files" >> $GITHUB_STEP_SUMMARY
+        echo "- Regenerated metainfo.json files" >> $GITHUB_STEP_SUMMARY
+        echo "- Updated extensions.json" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Files changed:" >> $GITHUB_STEP_SUMMARY
+        git diff --name-only HEAD~1 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+
+    - name: No changes summary
+      if: steps.check_changes.outputs.changes == 'false'
+      run: |
+        echo "## ℹ️ No changes needed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "All EXTENSION files already have SHA256 checksums and metadata is up to date." >> $GITHUB_STEP_SUMMARY

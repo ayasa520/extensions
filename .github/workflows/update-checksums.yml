@@ -52,16 +52,24 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-        # Pull any changes that might have occurred during processing
-        git pull origin ${{ github.ref_name }} --rebase
-
-        # Add and commit changes
+        # Add all changes first
         git add .
+
+        # Check if there are any changes to commit
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        # Commit changes
         git commit -m 'Update SHA256 checksums and metadata
 
         - Added SHA256 checksums to EXTENSION files
         - Regenerated metainfo.json files
         - Updated extensions.json'
+
+        # Pull any remote changes and rebase our commit
+        git pull origin ${{ github.ref_name }} --rebase
 
         # Push changes
         git push origin ${{ github.ref_name }}

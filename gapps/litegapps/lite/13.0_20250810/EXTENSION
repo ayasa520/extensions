@@ -1,0 +1,21 @@
+name="LiteGapps-Lite"
+version=20250810
+description="LiteGapps Lite is a small and light version of google apps."
+provides=("gapps")
+conflicts=("gapps" "microg")
+source_x86_64=("${name}-${version}.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-13.0-20250810-unofficial.zip")
+source_arm64=("${name}-${version}.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-13.0-20250810-unofficial.zip")
+source_arm=("${name}-${version}.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-13.0-20250810-unofficial.zip")
+md5sums_x86_64=("694ae42414e596b82190dc037e4047ef")
+md5sums_arm64=("cab649c230cec941f4d4e2f686bb9828")
+md5sums_arm=("809185cf8438732131bc00bf0f496b34")
+sha256sums_x86_64=("75f6643d4ca10e1fe005fed4c3db54d174b2470442f4da006bd137ebfb94083a")
+sha256sums_arm64=("c14b23028134a859e0987b81cf700a4b6c848ab0f1149ff384b4da9c4376ec22")
+sha256sums_arm=("b90679cb032bd32c5c66c6ef2097b0993ea47a460671f32c1e4b98127deaf39e")
+android_version=13
+arch=("x86_64" "arm64" "arm")
+
+package() {
+    unzip "${name}-${version}.zip" -d "$srcdir"
+    tar -xvf "${srcdir}/files/files.tar.xz" --strip-components=2 -C "${pkgdir}" "${CARCH}/33/system"
+}

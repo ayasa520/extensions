@@ -1,6 +1,6 @@
 {
     "name": "LiteGapps-Lite", 
-    "version": "20250810", 
+    "version": "13.0-20250810-unofficial", 
     "description": "LiteGapps Lite is a small and light version of google apps.", 
     "provides": [
         "gapps"
@@ -10,13 +10,13 @@
         "microg"
     ], 
     "source_x86_64": [
-        "LiteGapps-Lite-20250810.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-13.0-20250810-unofficial.zip"
+        "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-13.0-20250810-unofficial.zip"
     ], 
     "source_arm64": [
-        "LiteGapps-Lite-20250810.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-13.0-20250810-unofficial.zip"
+        "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-13.0-20250810-unofficial.zip"
     ], 
     "source_arm": [
-        "LiteGapps-Lite-20250810.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-13.0-20250810-unofficial.zip"
+        "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-13.0-20250810-unofficial.zip"
     ], 
     "md5sums_x86_64": [
         "694ae42414e596b82190dc037e4047ef"

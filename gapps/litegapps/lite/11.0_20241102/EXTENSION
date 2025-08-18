@@ -1,5 +1,5 @@
 name="LiteGapps-Lite"
-version=202401102
+version="11.0-202401102-unofficial"
 description="LiteGapps Lite is a small and light version of google apps."
 provides=("gapps")
 conflicts=("gapps" "microg")

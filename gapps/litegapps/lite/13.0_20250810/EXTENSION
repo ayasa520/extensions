@@ -14,6 +14,7 @@ sha256sums_arm64=("c14b23028134a859e0987b81cf700a4b6c848ab0f1149ff384b4da9c4376e
 sha256sums_arm=("b90679cb032bd32c5c66c6ef2097b0993ea47a460671f32c1e4b98127deaf39e")
 android_version=13
 arch=("x86_64" "arm64" "arm")
+install="gapps.install"
 
 package() {
     unzip "${name}-${version}.zip" -d "$srcdir"

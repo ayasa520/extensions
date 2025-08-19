@@ -51,5 +51,6 @@
         "x86", 
         "arm64", 
         "arm"
-    ]
+    ], 
+    "install": "gapps.install"
 }

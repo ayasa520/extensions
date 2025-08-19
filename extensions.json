@@ -18,7 +18,9 @@
                                 "version": "13.0-20250810-unofficial",
                                 "path": "13.0_20250810",
                                 "android_version": "13",
+                                "install": "gapps.install",
                                 "files": [
+                                    "gapps.install",
                                     "EXTENSION"
                                 ],
                                 "provides": [
@@ -67,7 +69,9 @@
                                 "version": "11.0-202401102-unofficial",
                                 "path": "11.0_20241102",
                                 "android_version": "11",
+                                "install": "gapps.install",
                                 "files": [
+                                    "gapps.install",
                                     "EXTENSION"
                                 ],
                                 "provides": [
@@ -126,7 +130,9 @@
                                 "version": "11.0-20250810-unofficial",
                                 "path": "11.0_20250810",
                                 "android_version": "11",
+                                "install": "gapps.install",
                                 "files": [
+                                    "gapps.install",
                                     "EXTENSION"
                                 ],
                                 "provides": [

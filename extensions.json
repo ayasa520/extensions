@@ -198,7 +198,9 @@
                         "version": "20240619",
                         "path": "20240419",
                         "android_version": "13",
+                        "install": "gapps.install",
                         "files": [
+                            "gapps.install",
                             "EXTENSION"
                         ],
                         "provides": [

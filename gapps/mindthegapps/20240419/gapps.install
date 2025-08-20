@@ -3,6 +3,24 @@ pre_install:
   - rm_data: 
     - "data/com.google.android.gms"
     - "data/com.android.vending"
+    - "system/package_cache/11/GmsSettingsProviderOverlay.apk-16"
+    - "system/package_cache/11/GmsOverlay.apk-16"
+    - "system/package_cache/11/GooglePartnerSetup-16"
+    - "system/package_cache/11/AndroidAutoStub-16"
+    - "system/package_cache/11/VelvetTitan-16"
+    - "system/package_cache/11/GoogleRestore-16"
+    - "system/package_cache/11/Phonesky-16"
+    - "system/package_cache/11/GmsCore-16"
+    - "system/package_cache/11/Velvet-16"
+    - "system/package_cache/11/PrebuiltExchange3Google-16"
+    - "system/package_cache/11/GoogleCalendarSyncAdapter-16"
+    - "system/package_cache/11/MarkupGoogle-16"
+    - "system/package_cache/11/SpeechServicesByGoogle-16"
+    - "system/package_cache/11/GoogleContactsSyncAdapter-16"
+    - "system/package_cache/11/talkback-16"
+    - "system/package_cache/11/GoogleFeedback-16"
+    - "system/package_cache/11/GoogleServicesFramework-16"
+    - "system/package_cache/11/SetupWizard-16"
 post_remove:
   - rm_apk: ["com.google.android.gms", "com.android.vending"]
   - rm_data: 

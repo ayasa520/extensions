@@ -1,190 +1,966 @@
 [
     {
+        "name": "Arm Translation",
+        "description": "Proprietary software to run ARM applications on X86 machines",
+        "path": "arm_translation",
+        "list": [
+            {
+                "name": "ndk_translation",
+                "description": "Google's ndk_translation for Intel/AMD x86 CPU",
+                "path": "ndk_translation",
+                "list": [
+                    {
+                        "path": "ndk_translation-chromeos_guybrush",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_guybrush",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware",
+                                "version": "R119-15633.69.0",
+                                "path": "ndk_translation-chromeos_guybrush-R119-15633.69.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                ],
+                                "md5sums": [
+                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                ],
+                                "sha256sums": [
+                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "ndk_translation-chromeos_zork",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_zork",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware",
+                                "version": "R125-15853.53.0",
+                                "path": "ndk_translation-chromeos_zork-R125-15853.53.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "faece8cc787a520193545116501cad40534063fc",
+                                "android_version": "13",
+                                "files": [
+                                    "EXTENSION",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_zork-R125-15853.53.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/faece8cc787a520193545116501cad40534063fc.zip"
+                                ],
+                                "md5sums": [
+                                    "f7605b31e51eaa69f13b508b20e74d10"
+                                ],
+                                "sha256sums": [
+                                    "235b31e75cd62fe18a6d11f4772df096c767d0d0252ef7eb7a2aeb56448ba915"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "ndk_translation-chromeos_guybrush-patched",
+                        "list": [
+                            {
+                                "name": "ndk_translation-chromeos_guybrush-patched",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
+                                "version": "R119-15633.69.0",
+                                "path": "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "android_version": "11",
+                                "files": [
+                                    "scripton_ndk.sh",
+                                    "EXTENSION",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                ],
+                                "md5sums": [
+                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                ],
+                                "sha256sums": [
+                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "houdini",
+                "description": "Intel's libhoudini, for Intel/AMD X86 CPU",
+                "path": "houdini",
+                "list": [
+                    {
+                        "path": "houdini-chromeos_brya-patched",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_brya-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
+                                "version": "38795",
+                                "path": "houdini-chromeos_brya-patched-38795",
+                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "scripton.sh"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_brya-patched-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                ],
+                                "md5sums": [
+                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ],
+                                "sha256sums": [
+                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-wsa11",
+                        "list": [
+                            {
+                                "name": "houdini-wsa11",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image",
+                                "version": "38765",
+                                "path": "houdini-wsa11-38765",
+                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-wsa11-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                ],
+                                "md5sums": [
+                                    "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "sha256sums": [
+                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-chromeos_octopus",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_octopus",
+                                "description": "Intel's libhoudini for Intel x86 CPU, pulled from ChromeOS's arcvm image for volteer Chromebooks",
+                                "version": "39489",
+                                "path": "houdini-chromeos_octopus-39489",
+                                "_commit": "5643480a2c504bd0ee4739a6354fefc70d032ad4",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "13",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_octopus-39489.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/5643480a2c504bd0ee4739a6354fefc70d032ad4.zip"
+                                ],
+                                "md5sums": [
+                                    "9085a6ec5d0ec5b7b715981676ffee18"
+                                ],
+                                "sha256sums": [
+                                    "8464456aa108ee50205ed9e530b109cb4ebdc603f0b41471de5867cd13b1dfc3"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-wsa11-patched",
+                        "list": [
+                            {
+                                "name": "houdini-wsa11-patched",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
+                                "version": "38765",
+                                "path": "houdini-wsa11-patched-38765",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "prop.json",
+                                    "scripton.sh"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
+                                ],
+                                "md5sums": [
+                                    "5554b11cba905058c3d9bb5e45535d83"
+                                ],
+                                "sha256sums": [
+                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "houdini-chromeos_brya",
+                        "list": [
+                            {
+                                "name": "houdini-chromeos_brya",
+                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
+                                "version": "38795",
+                                "path": "houdini-chromeos_brya-38795",
+                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
+                                "_repo": "vendor_intel_proprietary_houdini",
+                                "android_version": "11",
+                                "files": [
+                                    "EXTENSION",
+                                    "houdini.rc",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                ],
+                                "md5sums": [
+                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                ],
+                                "sha256sums": [
+                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Other",
+        "description": "Some stuff that might be useful",
+        "path": "other",
+        "list": [
+            {
+                "path": "hidestatusbar",
+                "list": [
+                    {
+                        "name": "hidestatusbar",
+                        "description": "Hide status bar",
+                        "version": "0.0.2",
+                        "path": "0_0_2",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "hidestatusbar"
+                        ],
+                        "conflicts": [
+                            "hidestatusbar"
+                        ],
+                        "source": [
+                            "hidestatusbar-0.0.2.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.2/app-release.apk"
+                        ],
+                        "md5sums": [
+                            "ff2fe63ddfb4b035e6720a1b195b2355"
+                        ],
+                        "sha256sums": [
+                            "e55bae9ef51de5d2e6512564b25866039b42a32cb0a7aaddcd6f4fce7c34a2e3"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Launchers",
+        "description": "Android launchers offer customizable home screens for personalized device appearance and functionality",
+        "path": "launcher",
+        "list": [
+            {
+                "path": "kvaesitso",
+                "list": [
+                    {
+                        "name": "kvaesitso",
+                        "description": "A search-focused Android launcher",
+                        "version": "1.31.2",
+                        "path": "kvaesitso-1312",
+                        "android_version": "11",
+                        "files": [
+                            "kvaesitso.rc",
+                            "EXTENSION",
+                            "prop.json"
+                        ],
+                        "provides": [
+                            "launcher kvaesitso"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
+                        ],
+                        "md5sums": [
+                            "b35ebd52cb2ee0f010425e06907934ac"
+                        ],
+                        "sha256sums": [
+                            "8373c6a44b70b44381cb34ca073f0f9b5c4c681cfd3d984ba6b8b11e7e533a3e"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "smartdock",
+                "list": [
+                    {
+                        "name": "smartdock",
+                        "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
+                        "version": "1.12.1",
+                        "path": "smartdock-1121",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION",
+                            "permissions_cu.axel.smartdock.xml",
+                            "smartdock.rc",
+                            "prop.json"
+                        ],
+                        "provides": [
+                            "smartdock launcher"
+                        ],
+                        "conflicts": [
+                            "launcher"
+                        ],
+                        "source": [
+                            "smartdock-1.12.1.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk"
+                        ],
+                        "md5sums": [
+                            "dde94e2babc5f78bf7279e60a98eef05"
+                        ],
+                        "sha256sums": [
+                            "e63e49f42eebdb7049c2d55bd7daf8b78ab98baade00a83f425fce95e5790f0d"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Root Manager",
+        "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
+        "path": "root",
+        "list": [
+            {
+                "path": "kitsune",
+                "list": [
+                    {
+                        "name": "Kitsune",
+                        "description": "A fork of KitsuneMagisk, with some patches applied to make it work with Waydroid.",
+                        "version": "27.2",
+                        "path": "kitsune-27.2",
+                        "install": "Kitsune.install",
+                        "files": [
+                            "bootanim.rc",
+                            "EXTENSION",
+                            "Kitsune.install"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "Kitsune-27.2.apk::https://github.com/ayasa520/KitsuneMagisk/releases/download/ea3f64a/app-debug.apk"
+                        ],
+                        "md5sums": [
+                            "36a906be869ff6e877aff8bdc5a405d6"
+                        ],
+                        "sha256sums": [
+                            "f7ecfdc6b07d1b7f60fae5231427c37c05f5ed705d619696968b71f4846886af"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "magisk",
+                "list": [
+                    {
+                        "name": "Magisk",
+                        "description": "The Magic Mask for Android",
+                        "version": "30200",
+                        "path": "magisk-30200",
+                        "install": "Magisk.install",
+                        "files": [
+                            "bootanim.rc",
+                            "EXTENSION",
+                            "Magisk.install"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "Magisk-30200.apk::https://github.com/ayasa520/Magisk/releases/download/debug-7be6d81-30200/Magisk-7be6d81-30200-debug.apk"
+                        ],
+                        "md5sums": [
+                            "834b0f063ea713bea48b92c7d5648ce9"
+                        ],
+                        "sha256sums": [
+                            "da4df4121e86f792159778ad3c9570a6ead86f55ee6f94ffc2e33b2983e62273"
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "magisk-delta",
+                "list": [
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "26105-d2a66567",
+                        "path": "magisk-delta-26105",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "EXTENSION",
+                            "magisk-delta.install"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "47fdc4dcd7cdff81fe73e3e39cb4e82b"
+                        ],
+                        "sha256sums": [
+                            "c13ae33623835fec3302fe43d9f7d74562022a47995a52e3d7a8f02e6be2d7c2"
+                        ]
+                    },
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "25210-fdac22ba",
+                        "path": "magisk-delta-25210",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "EXTENSION",
+                            "magisk-delta.install"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-25210-fdac22ba.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "ec98dcee84a47785dc551eb7c465b25f"
+                        ],
+                        "sha256sums": [
+                            "420d9b956fff28ed94d7e15fa45f1847f9e5d85fdcfa61f375aef0b962585d3c"
+                        ]
+                    },
+                    {
+                        "name": "magisk-delta",
+                        "description": "Magisk delta is a forked version of the original Magisk",
+                        "version": "27001-R6687BB53",
+                        "path": "magisk-delta-27001",
+                        "install": "magisk-delta.install",
+                        "android_version": "11",
+                        "files": [
+                            "bootanim.rc",
+                            "EXTENSION",
+                            "magisk-delta.install"
+                        ],
+                        "provides": [
+                            "magisk"
+                        ],
+                        "conflicts": [
+                            "magisk"
+                        ],
+                        "source": [
+                            "magisk-delta-27001-R6687BB53.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
+                        ],
+                        "md5sums": [
+                            "664cf8ceb7eda13fcb9fd5ad16e62f54"
+                        ],
+                        "sha256sums": [
+                            "9a670805dd52433214fb18cbebda5a428ae795bc46b2e995f0adc09b0d8c8397"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "MicroG",
+        "description": "A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries",
+        "path": "microg",
+        "list": [
+            {
+                "name": "MinMicroG",
+                "description": "This is a simple MicroG installer",
+                "path": "MinMicroG",
+                "list": [
+                    {
+                        "path": "nogoolag",
+                        "list": [
+                            {
+                                "name": "MinMicroG-NoGoolag",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250820",
+                                "path": "20250820",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-NoGoolag-20250820.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.08.20/MinMicroG-NoGoolag-UPDATELY-20250820010422.zip"
+                                ],
+                                "sha256sums": [
+                                    "ad95e0d5848f0685c3cd86469d2dc3366843c1b3aa2495f14427b44400b10d9d"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-NoGoolag",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250403",
+                                "path": "20250403",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-NoGoolag-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-NoGoolag-UPDATELY-20250403010229.zip"
+                                ],
+                                "md5sums": [
+                                    "044c59458e4dd420083f5cc712bc160a"
+                                ],
+                                "sha256sums": [
+                                    "8a35e0308c5bd873b2b4dd025ad849087da07294a68ad07b0fe72c3a072fb250"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-NoGoolag",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-NoGoolag-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip"
+                                ],
+                                "md5sums": [
+                                    "eedb4eee533b525e4f7a018c699b6b6b"
+                                ],
+                                "sha256sums": [
+                                    "e1497e884d175338c4d250a6cc79a131482c4b5810a34b96d3d60bc2665c54f6"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "standard",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Standard",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250820",
+                                "path": "20250820",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Standard-20250820.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.08.20/MinMicroG-Standard-UPDATELY-20250820010434.zip"
+                                ],
+                                "sha256sums": [
+                                    "0261a89653992067b579090ac25f488164f4aa4235436dc730653ce514f725b8"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-Standard",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250403",
+                                "path": "20250403",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Standard-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-Standard-UPDATELY-20250403010232.zip"
+                                ],
+                                "md5sums": [
+                                    "cdef3222aba13e192b9c6f46b18c42fa"
+                                ],
+                                "sha256sums": [
+                                    "3b92ad7de16c1c538239dc8a3a747254b8bd0fdfe744bd2963dde2aa9d0ad785"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-Standard",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Standard-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Standard-UPDATELY-20240613004613.zip"
+                                ],
+                                "md5sums": [
+                                    "82268a3035356152787aadd7ae03ee8a"
+                                ],
+                                "sha256sums": [
+                                    "5c48e2f8c6c03d95e1f66d071b8679c7f4dc3307b5efa031859f03441e7dff43"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "path": "minimal",
+                        "list": [
+                            {
+                                "name": "MinMicroG-Minimal",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250820",
+                                "path": "20250820",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Minimal-20250820.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.08.20/MinMicroG-Minimal-UPDATELY-20250820010418.zip"
+                                ],
+                                "sha256sums": [
+                                    "60d60ebc9e59a9c0ff31ada2d3db2c0fd9e9adb3be0b4a8a89bbdccbd14c2b94"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-Minimal",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20250403",
+                                "path": "20250403",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Minimal-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-Minimal-UPDATELY-20250403010210.zip"
+                                ],
+                                "md5sums": [
+                                    "bcef5a312851bebe8771c25270fd6aa7"
+                                ],
+                                "sha256sums": [
+                                    "c0253d6ca8af2083cd25f4da1cbf421c9a9aedc5c43d79317f43a55b1eda1392"
+                                ]
+                            },
+                            {
+                                "name": "MinMicroG-Minimal",
+                                "description": "A Minimal MicroG installer with just the essentials",
+                                "version": "20240613",
+                                "path": "20240613",
+                                "install": "microg.install",
+                                "files": [
+                                    "microg.rc",
+                                    "microg.install",
+                                    "EXTENSION"
+                                ],
+                                "provides": [
+                                    "microg"
+                                ],
+                                "conflicts": [
+                                    "gapps",
+                                    "microg"
+                                ],
+                                "source": [
+                                    "MinMicroG-Minimal-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip"
+                                ],
+                                "md5sums": [
+                                    "5a8fbcfd13e732194efafe84368a855d"
+                                ],
+                                "sha256sums": [
+                                    "4ba36563f95e476d527d424d6c50ec0d4a3eb054f0aaec734cdd0600ad1e6177"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Gapps",
         "description": "Third-party Google Apps packages for Android custom ROMs, providing essential Google services and applications",
         "path": "gapps",
         "list": [
             {
-                "name": "LiteGapps",
-                "description": "litegapps is a google apps package that supports almost all arch and android versions while maintaining lightness, saving battery and more.",
-                "path": "litegapps",
+                "path": "opengapps",
                 "list": [
                     {
-                        "path": "lite",
-                        "list": [
-                            {
-                                "name": "LiteGapps-Lite",
-                                "description": "LiteGapps Lite is a small and light version of google apps.",
-                                "version": "13.0-20250810-unofficial",
-                                "path": "13.0_20250810",
-                                "android_version": "13",
-                                "install": "gapps.install",
-                                "files": [
-                                    "gapps.install",
-                                    "EXTENSION"
-                                ],
-                                "provides": [
-                                    "gapps"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source_x86_64": [
-                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-13.0-20250810-unofficial.zip"
-                                ],
-                                "source_arm64": [
-                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-13.0-20250810-unofficial.zip"
-                                ],
-                                "source_arm": [
-                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-13.0-20250810-unofficial.zip"
-                                ],
-                                "md5sums_x86_64": [
-                                    "694ae42414e596b82190dc037e4047ef"
-                                ],
-                                "md5sums_arm64": [
-                                    "cab649c230cec941f4d4e2f686bb9828"
-                                ],
-                                "md5sums_arm": [
-                                    "809185cf8438732131bc00bf0f496b34"
-                                ],
-                                "sha256sums_x86_64": [
-                                    "75f6643d4ca10e1fe005fed4c3db54d174b2470442f4da006bd137ebfb94083a"
-                                ],
-                                "sha256sums_arm64": [
-                                    "c14b23028134a859e0987b81cf700a4b6c848ab0f1149ff384b4da9c4376ec22"
-                                ],
-                                "sha256sums_arm": [
-                                    "b90679cb032bd32c5c66c6ef2097b0993ea47a460671f32c1e4b98127deaf39e"
-                                ],
-                                "arch": [
-                                    "x86_64",
-                                    "arm64",
-                                    "arm"
-                                ]
-                            },
-                            {
-                                "name": "LiteGapps-Lite",
-                                "description": "LiteGapps Lite is a small and light version of google apps.",
-                                "version": "11.0-202401102-unofficial",
-                                "path": "11.0_20241102",
-                                "android_version": "11",
-                                "install": "gapps.install",
-                                "files": [
-                                    "gapps.install",
-                                    "EXTENSION"
-                                ],
-                                "provides": [
-                                    "gapps"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source_x86_64": [
-                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86_64-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_x86": [
-                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_arm64": [
-                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm64-11.0-20241102-unofficial.zip"
-                                ],
-                                "source_arm": [
-                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm-11.0-20241102-unofficial.zip"
-                                ],
-                                "md5sums_x86_64": [
-                                    "628180d6bd49648ed35a636ee4554224"
-                                ],
-                                "md5sums_x86": [
-                                    "0ad414f2f0e421037317ea235d45da4b"
-                                ],
-                                "md5sums_arm64": [
-                                    "640e81d6b15c204adea164fcdc5b9df8"
-                                ],
-                                "md5sums_arm": [
-                                    "ab70cfcbd6f6fed356d7592c4d9500d1"
-                                ],
-                                "sha256sums_x86_64": [
-                                    "9dabcd8af1b22c0b00caeb2fecf493939c694b328a3a1f0243dc2ae08a47f869"
-                                ],
-                                "sha256sums_x86": [
-                                    "1d382d01f0a9e3e797c1731e93607948ec72d719ce8d3be6a60d1aefa0db22f2"
-                                ],
-                                "sha256sums_arm64": [
-                                    "4efc071de5ccdd5fb91d91ed0b084bdf8be49b0cf9f34767c1f9738d8228e8cf"
-                                ],
-                                "sha256sums_arm": [
-                                    "fb4a50084326cd28acdb43b865f1a3c43f2e11ea314cc1fd6cf7965866712103"
-                                ],
-                                "arch": [
-                                    "x86_64",
-                                    "x86",
-                                    "arm64",
-                                    "arm"
-                                ]
-                            },
-                            {
-                                "name": "LiteGapps-Lite",
-                                "description": "LiteGapps Lite is a small and light version of google apps.",
-                                "version": "11.0-20250810-unofficial",
-                                "path": "11.0_20250810",
-                                "android_version": "11",
-                                "install": "gapps.install",
-                                "files": [
-                                    "gapps.install",
-                                    "EXTENSION"
-                                ],
-                                "provides": [
-                                    "gapps"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source_x86_64": [
-                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-11.0-20250810-unofficial.zip"
-                                ],
-                                "source_x86": [
-                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86-11.0-20250810-unofficial.zip"
-                                ],
-                                "source_arm64": [
-                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-11.0-20250810-unofficial.zip"
-                                ],
-                                "source_arm": [
-                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-11.0-20250810-unofficial.zip"
-                                ],
-                                "md5sums_x86_64": [
-                                    "182aa50149622b3a45ed6d30d1052948"
-                                ],
-                                "md5sums_x86": [
-                                    "77904f957feec891a50a106baf16afaf"
-                                ],
-                                "md5sums_arm64": [
-                                    "a82161feff238d5de47f50fcd7da71e0"
-                                ],
-                                "md5sums_arm": [
-                                    "711bc9242e84e24d51d5b5519bfb36f5"
-                                ],
-                                "sha256sums_x86_64": [
-                                    "d49612af6b44d17db7db45538356d6b10527c39db9e3df929dc95914833ca47b"
-                                ],
-                                "sha256sums_x86": [
-                                    "be2d1b128e901c3b5d214d9d6d3a82031b1207b616d02f1831d7d9b738f78df7"
-                                ],
-                                "sha256sums_arm64": [
-                                    "e075a61ffc457bd74fd1449c3a1ebc6ec374bdbe7956ae628270af785b815cfd"
-                                ],
-                                "sha256sums_arm": [
-                                    "88297cd88e2eb44034934ef81c338df7ee206c6b4d4417e00c0f8abd4d5c89b5"
-                                ],
-                                "arch": [
-                                    "x86_64",
-                                    "x86",
-                                    "arm64",
-                                    "arm"
-                                ]
-                            }
+                        "name": "opengapps",
+                        "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
+                        "version": "20220503",
+                        "path": "20220503",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "gapps"
+                        ],
+                        "conflicts": [
+                            "gapps",
+                            "microg"
+                        ],
+                        "source_x86_64": [
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220503/open_gapps-x86_64-11.0-pico-20220503.zip/download"
+                        ],
+                        "source_x86": [
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86/20220503/open_gapps-x86-11.0-pico-20220503.zip/download"
+                        ],
+                        "source_arm64": [
+                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220503/open_gapps-arm64-11.0-pico-20220503.zip/download"
+                        ],
+                        "md5sums_x86_64": [
+                            "5a6d242be34ad1acf92899c7732afa1b"
+                        ],
+                        "md5sums_x86": [
+                            "efda4943076016d00b40e0874b12ddd3"
+                        ],
+                        "md5sums_arm64": [
+                            "67e927e4943757f418e4f934825cf987"
+                        ],
+                        "sha256sums_x86_64": [
+                            "a0b0734eb8053ceba7d076456bb642350805c95b0c4c38f402e65936c2cdcfb0"
+                        ],
+                        "sha256sums_x86": [
+                            "d581bd5eac8fe0929fe277f5ecc2513ed21707c26af1716a1ae28c8b7f2d0ce5"
+                        ],
+                        "sha256sums_arm64": [
+                            "11c4ff4db8ce7a7876f7d30bec46d853e52b82cc702aa717b421a2602988112b"
+                        ],
+                        "arch": [
+                            "x86_64",
+                            "x86",
+                            "arm64"
+                        ]
+                    },
+                    {
+                        "name": "opengapps",
+                        "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
+                        "version": "20220215",
+                        "path": "20220215",
+                        "android_version": "11",
+                        "files": [
+                            "EXTENSION"
+                        ],
+                        "provides": [
+                            "gapps"
+                        ],
+                        "conflicts": [
+                            "gapps",
+                            "microg"
+                        ],
+                        "source_x86_64": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220215/open_gapps-x86_64-11.0-pico-20220215.zip/download"
+                        ],
+                        "source_arm64": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220215/open_gapps-arm64-11.0-pico-20220215.zip/download"
+                        ],
+                        "source_arm": [
+                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm/20220215/open_gapps-arm-11.0-pico-20220215.zip/download"
+                        ],
+                        "md5sums_x86_64": [
+                            "1c8a26d1311e0743ec137a9baf22c3d6"
+                        ],
+                        "md5sums_arm64": [
+                            "7790055d34bbfc6fe610b0cd263a7add"
+                        ],
+                        "md5sums_arm": [
+                            "8719519fa32ae83a62621c6056d32814"
+                        ],
+                        "sha256sums_x86_64": [
+                            "b31101c17923caa16f86cabbd769501fdb22f4b4b276cba3aa500bafba45d822"
+                        ],
+                        "sha256sums_arm64": [
+                            "722bf4395edc62c12ca521d71bb929157b714c240f2557a61d9a30969230ed36"
+                        ],
+                        "sha256sums_arm": [
+                            "4df52af6b0dcc0f21d6e1dd943ef3088121354179782b9d0d48593ff127b4cc0"
+                        ],
+                        "arch": [
+                            "x86_64",
+                            "arm64",
+                            "arm"
                         ]
                     }
                 ]
@@ -256,885 +1032,184 @@
                 ]
             },
             {
-                "path": "opengapps",
+                "name": "LiteGapps",
+                "description": "litegapps is a google apps package that supports almost all arch and android versions while maintaining lightness, saving battery and more.",
+                "path": "litegapps",
                 "list": [
                     {
-                        "name": "opengapps",
-                        "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
-                        "version": "20220215",
-                        "path": "20220215",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION"
-                        ],
-                        "provides": [
-                            "gapps"
-                        ],
-                        "conflicts": [
-                            "gapps",
-                            "microg"
-                        ],
-                        "source_x86_64": [
-                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220215/open_gapps-x86_64-11.0-pico-20220215.zip/download"
-                        ],
-                        "source_arm64": [
-                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220215/open_gapps-arm64-11.0-pico-20220215.zip/download"
-                        ],
-                        "source_arm": [
-                            "opengapps-20220215.zip::https://sourceforge.net/projects/opengapps/files/arm/20220215/open_gapps-arm-11.0-pico-20220215.zip/download"
-                        ],
-                        "md5sums_x86_64": [
-                            "1c8a26d1311e0743ec137a9baf22c3d6"
-                        ],
-                        "md5sums_arm64": [
-                            "7790055d34bbfc6fe610b0cd263a7add"
-                        ],
-                        "md5sums_arm": [
-                            "8719519fa32ae83a62621c6056d32814"
-                        ],
-                        "sha256sums_x86_64": [
-                            "b31101c17923caa16f86cabbd769501fdb22f4b4b276cba3aa500bafba45d822"
-                        ],
-                        "sha256sums_arm64": [
-                            "722bf4395edc62c12ca521d71bb929157b714c240f2557a61d9a30969230ed36"
-                        ],
-                        "sha256sums_arm": [
-                            "4df52af6b0dcc0f21d6e1dd943ef3088121354179782b9d0d48593ff127b4cc0"
-                        ],
-                        "arch": [
-                            "x86_64",
-                            "arm64",
-                            "arm"
-                        ]
-                    },
-                    {
-                        "name": "opengapps",
-                        "description": "The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages",
-                        "version": "20220503",
-                        "path": "20220503",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION"
-                        ],
-                        "provides": [
-                            "gapps"
-                        ],
-                        "conflicts": [
-                            "gapps",
-                            "microg"
-                        ],
-                        "source_x86_64": [
-                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86_64/20220503/open_gapps-x86_64-11.0-pico-20220503.zip/download"
-                        ],
-                        "source_x86": [
-                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/x86/20220503/open_gapps-x86-11.0-pico-20220503.zip/download"
-                        ],
-                        "source_arm64": [
-                            "opengapps-20220503.zip::https://sourceforge.net/projects/opengapps/files/arm64/20220503/open_gapps-arm64-11.0-pico-20220503.zip/download"
-                        ],
-                        "md5sums_x86_64": [
-                            "5a6d242be34ad1acf92899c7732afa1b"
-                        ],
-                        "md5sums_x86": [
-                            "efda4943076016d00b40e0874b12ddd3"
-                        ],
-                        "md5sums_arm64": [
-                            "67e927e4943757f418e4f934825cf987"
-                        ],
-                        "sha256sums_x86_64": [
-                            "a0b0734eb8053ceba7d076456bb642350805c95b0c4c38f402e65936c2cdcfb0"
-                        ],
-                        "sha256sums_x86": [
-                            "d581bd5eac8fe0929fe277f5ecc2513ed21707c26af1716a1ae28c8b7f2d0ce5"
-                        ],
-                        "sha256sums_arm64": [
-                            "11c4ff4db8ce7a7876f7d30bec46d853e52b82cc702aa717b421a2602988112b"
-                        ],
-                        "arch": [
-                            "x86_64",
-                            "x86",
-                            "arm64"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Launchers",
-        "description": "Android launchers offer customizable home screens for personalized device appearance and functionality",
-        "path": "launcher",
-        "list": [
-            {
-                "path": "kvaesitso",
-                "list": [
-                    {
-                        "name": "kvaesitso",
-                        "description": "A search-focused Android launcher",
-                        "version": "1.31.2",
-                        "path": "kvaesitso-1312",
-                        "android_version": "11",
-                        "files": [
-                            "kvaesitso.rc",
-                            "prop.json",
-                            "EXTENSION"
-                        ],
-                        "provides": [
-                            "launcher kvaesitso"
-                        ],
-                        "conflicts": [
-                            "launcher"
-                        ],
-                        "source": [
-                            "kvaesitso-1.31.2.apk::https://github.com/MM2-0/Kvaesitso/releases/download/v1.31.2/de.mm20.launcher2.release-v1.31.2.apk"
-                        ],
-                        "md5sums": [
-                            "b35ebd52cb2ee0f010425e06907934ac"
-                        ],
-                        "sha256sums": [
-                            "8373c6a44b70b44381cb34ca073f0f9b5c4c681cfd3d984ba6b8b11e7e533a3e"
-                        ]
-                    }
-                ]
-            },
-            {
-                "path": "smartdock",
-                "list": [
-                    {
-                        "name": "smartdock",
-                        "description": "A user-friendly desktop mode launcher that offers a modern and customizable user",
-                        "version": "1.12.1",
-                        "path": "smartdock-1121",
-                        "android_version": "11",
-                        "files": [
-                            "permissions_cu.axel.smartdock.xml",
-                            "prop.json",
-                            "EXTENSION",
-                            "smartdock.rc"
-                        ],
-                        "provides": [
-                            "smartdock launcher"
-                        ],
-                        "conflicts": [
-                            "launcher"
-                        ],
-                        "source": [
-                            "smartdock-1.12.1.apk::https://f-droid.org/repo/cu.axel.smartdock_1121.apk"
-                        ],
-                        "md5sums": [
-                            "dde94e2babc5f78bf7279e60a98eef05"
-                        ],
-                        "sha256sums": [
-                            "e63e49f42eebdb7049c2d55bd7daf8b78ab98baade00a83f425fce95e5790f0d"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Other",
-        "description": "Some stuff that might be useful",
-        "path": "other",
-        "list": [
-            {
-                "path": "hidestatusbar",
-                "list": [
-                    {
-                        "name": "hidestatusbar",
-                        "description": "Hide status bar",
-                        "version": "0.0.2",
-                        "path": "0_0_2",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION"
-                        ],
-                        "provides": [
-                            "hidestatusbar"
-                        ],
-                        "conflicts": [
-                            "hidestatusbar"
-                        ],
-                        "source": [
-                            "hidestatusbar-0.0.2.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.2/app-release.apk"
-                        ],
-                        "md5sums": [
-                            "ff2fe63ddfb4b035e6720a1b195b2355"
-                        ],
-                        "sha256sums": [
-                            "e55bae9ef51de5d2e6512564b25866039b42a32cb0a7aaddcd6f4fce7c34a2e3"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Root Manager",
-        "description": "Root managers allow users to gain root access on Android devices, enabling them to run applications that require superuser permissions and modify system files",
-        "path": "root",
-        "list": [
-            {
-                "path": "magisk-delta",
-                "list": [
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "27001-R6687BB53",
-                        "path": "magisk-delta-27001",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-27001-R6687BB53.apk::https://web.archive.org/web/20240715140430if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/722709822/da900348-7778-41d7-8c9f-38d41f4ad1b1?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20240715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240715T140430Z&X-Amz-Expires=300&X-Amz-Signature=6fedb17ce12abf0401240ffc1e6f2dbeb0df583cf4da7a0551e3f6faab0bc4fe&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=722709822&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "664cf8ceb7eda13fcb9fd5ad16e62f54"
-                        ],
-                        "sha256sums": [
-                            "9a670805dd52433214fb18cbebda5a428ae795bc46b2e995f0adc09b0d8c8397"
-                        ]
-                    },
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "25210-fdac22ba",
-                        "path": "magisk-delta-25210",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-25210-fdac22ba.apk::https://web.archive.org/web/20230718224206if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/50ec2f91-174b-4918-8587-04e847458bfd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230718%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230718T224206Z&X-Amz-Expires=300&X-Amz-Signature=ee54e872b4d3c1388601941e85b2fcf84d5e06968618271ea2f5e3ea5947d4e1&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "ec98dcee84a47785dc551eb7c465b25f"
-                        ],
-                        "sha256sums": [
-                            "420d9b956fff28ed94d7e15fa45f1847f9e5d85fdcfa61f375aef0b962585d3c"
-                        ]
-                    },
-                    {
-                        "name": "magisk-delta",
-                        "description": "Magisk delta is a forked version of the original Magisk",
-                        "version": "26105-d2a66567",
-                        "path": "magisk-delta-26105",
-                        "install": "magisk-delta.install",
-                        "android_version": "11",
-                        "files": [
-                            "EXTENSION",
-                            "magisk-delta.install",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "magisk-delta-26105-d2a66567.apk::https://web.archive.org/web/20230818182855if_/https://objects.githubusercontent.com/github-production-release-asset-2e65be/514574759/4762ecfe-0e09-454a-9d25-3506c4140dbe?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230818%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230818T182855Z&X-Amz-Expires=300&X-Amz-Signature=b7cec403f2c4f84766f3d787c042d6350a6002801a57f5e7cffc58f6db5a186a&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=514574759&response-content-disposition=attachment%3B%20filename%3Dapp-debug.apk&response-content-type=application%2Fvnd.android.package-archive"
-                        ],
-                        "md5sums": [
-                            "47fdc4dcd7cdff81fe73e3e39cb4e82b"
-                        ],
-                        "sha256sums": [
-                            "c13ae33623835fec3302fe43d9f7d74562022a47995a52e3d7a8f02e6be2d7c2"
-                        ]
-                    }
-                ]
-            },
-            {
-                "path": "kitsune",
-                "list": [
-                    {
-                        "name": "Kitsune",
-                        "description": "A fork of KitsuneMagisk, with some patches applied to make it work with Waydroid.",
-                        "version": "27.2",
-                        "path": "kitsune-27.2",
-                        "install": "Kitsune.install",
-                        "files": [
-                            "Kitsune.install",
-                            "EXTENSION",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "Kitsune-27.2.apk::https://github.com/ayasa520/KitsuneMagisk/releases/download/ea3f64a/app-debug.apk"
-                        ],
-                        "md5sums": [
-                            "36a906be869ff6e877aff8bdc5a405d6"
-                        ],
-                        "sha256sums": [
-                            "f7ecfdc6b07d1b7f60fae5231427c37c05f5ed705d619696968b71f4846886af"
-                        ]
-                    }
-                ]
-            },
-            {
-                "path": "magisk",
-                "list": [
-                    {
-                        "name": "Magisk",
-                        "description": "The Magic Mask for Android",
-                        "version": "30200",
-                        "path": "magisk-30200",
-                        "install": "Magisk.install",
-                        "files": [
-                            "Magisk.install",
-                            "EXTENSION",
-                            "bootanim.rc"
-                        ],
-                        "provides": [
-                            "magisk"
-                        ],
-                        "conflicts": [
-                            "magisk"
-                        ],
-                        "source": [
-                            "Magisk-30200.apk::https://github.com/ayasa520/Magisk/releases/download/debug-7be6d81-30200/Magisk-7be6d81-30200-debug.apk"
-                        ],
-                        "md5sums": [
-                            "834b0f063ea713bea48b92c7d5648ce9"
-                        ],
-                        "sha256sums": [
-                            "da4df4121e86f792159778ad3c9570a6ead86f55ee6f94ffc2e33b2983e62273"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "MicroG",
-        "description": "A free-as-in-freedom re-implementation of Google's proprietary Android user space apps and libraries",
-        "path": "microg",
-        "list": [
-            {
-                "name": "MinMicroG",
-                "description": "This is a simple MicroG installer",
-                "path": "MinMicroG",
-                "list": [
-                    {
-                        "path": "minimal",
+                        "path": "lite",
                         "list": [
                             {
-                                "name": "MinMicroG-Minimal",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Minimal-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Minimal-UPDATELY-20240613004603.zip"
-                                ],
-                                "md5sums": [
-                                    "5a8fbcfd13e732194efafe84368a855d"
-                                ],
-                                "sha256sums": [
-                                    "4ba36563f95e476d527d424d6c50ec0d4a3eb054f0aaec734cdd0600ad1e6177"
-                                ]
-                            },
-                            {
-                                "name": "MinMicroG-Minimal",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20250403",
-                                "path": "20250403",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Minimal-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-Minimal-UPDATELY-20250403010210.zip"
-                                ],
-                                "md5sums": [
-                                    "bcef5a312851bebe8771c25270fd6aa7"
-                                ],
-                                "sha256sums": [
-                                    "c0253d6ca8af2083cd25f4da1cbf421c9a9aedc5c43d79317f43a55b1eda1392"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "nogoolag",
-                        "list": [
-                            {
-                                "name": "MinMicroG-NoGoolag",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-NoGoolag-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-NoGoolag-UPDATELY-20240613004632.zip"
-                                ],
-                                "md5sums": [
-                                    "eedb4eee533b525e4f7a018c699b6b6b"
-                                ],
-                                "sha256sums": [
-                                    "e1497e884d175338c4d250a6cc79a131482c4b5810a34b96d3d60bc2665c54f6"
-                                ]
-                            },
-                            {
-                                "name": "MinMicroG-NoGoolag",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20250403",
-                                "path": "20250403",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-NoGoolag-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-NoGoolag-UPDATELY-20250403010229.zip"
-                                ],
-                                "md5sums": [
-                                    "044c59458e4dd420083f5cc712bc160a"
-                                ],
-                                "sha256sums": [
-                                    "8a35e0308c5bd873b2b4dd025ad849087da07294a68ad07b0fe72c3a072fb250"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "standard",
-                        "list": [
-                            {
-                                "name": "MinMicroG-Standard",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20240613",
-                                "path": "20240613",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Standard-20240613.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2024.06.13/MinMicroG-Standard-UPDATELY-20240613004613.zip"
-                                ],
-                                "md5sums": [
-                                    "82268a3035356152787aadd7ae03ee8a"
-                                ],
-                                "sha256sums": [
-                                    "5c48e2f8c6c03d95e1f66d071b8679c7f4dc3307b5efa031859f03441e7dff43"
-                                ]
-                            },
-                            {
-                                "name": "MinMicroG-Standard",
-                                "description": "A Minimal MicroG installer with just the essentials",
-                                "version": "20250403",
-                                "path": "20250403",
-                                "install": "microg.install",
-                                "files": [
-                                    "EXTENSION",
-                                    "microg.install",
-                                    "microg.rc"
-                                ],
-                                "provides": [
-                                    "microg"
-                                ],
-                                "conflicts": [
-                                    "gapps",
-                                    "microg"
-                                ],
-                                "source": [
-                                    "MinMicroG-Standard-20250403.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.04.03/MinMicroG-Standard-UPDATELY-20250403010232.zip"
-                                ],
-                                "md5sums": [
-                                    "cdef3222aba13e192b9c6f46b18c42fa"
-                                ],
-                                "sha256sums": [
-                                    "3b92ad7de16c1c538239dc8a3a747254b8bd0fdfe744bd2963dde2aa9d0ad785"
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Arm Translation",
-        "description": "Proprietary software to run ARM applications on X86 machines",
-        "path": "arm_translation",
-        "list": [
-            {
-                "name": "ndk_translation",
-                "description": "Google's ndk_translation for Intel/AMD x86 CPU",
-                "path": "ndk_translation",
-                "list": [
-                    {
-                        "path": "ndk_translation-chromeos_guybrush",
-                        "list": [
-                            {
-                                "name": "ndk_translation-chromeos_guybrush",
-                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware",
-                                "version": "R119-15633.69.0",
-                                "path": "ndk_translation-chromeos_guybrush-R119-15633.69.0",
-                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
-                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "name": "LiteGapps-Lite",
+                                "description": "LiteGapps Lite is a small and light version of google apps.",
+                                "version": "11.0-20250810-unofficial",
+                                "path": "11.0_20250810",
                                 "android_version": "11",
+                                "install": "gapps.install",
                                 "files": [
-                                    "prop.json",
+                                    "gapps.install",
                                     "EXTENSION"
                                 ],
                                 "provides": [
-                                    "arm_translaton"
+                                    "gapps"
                                 ],
                                 "conflicts": [
-                                    "arm_translaton"
+                                    "gapps",
+                                    "microg"
                                 ],
-                                "source": [
-                                    "ndk_translation-chromeos_guybrush-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
+                                "source_x86_64": [
+                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-11.0-20250810-unofficial.zip"
                                 ],
-                                "md5sums": [
-                                    "6d4b3788ac9e7e953aada561f64a2563"
+                                "source_x86": [
+                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86-11.0-20250810-unofficial.zip"
                                 ],
-                                "sha256sums": [
-                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
+                                "source_arm64": [
+                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-11.0-20250810-unofficial.zip"
+                                ],
+                                "source_arm": [
+                                    "LiteGapps-Lite-11.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-11.0-20250810-unofficial.zip"
+                                ],
+                                "md5sums_x86_64": [
+                                    "182aa50149622b3a45ed6d30d1052948"
+                                ],
+                                "md5sums_x86": [
+                                    "77904f957feec891a50a106baf16afaf"
+                                ],
+                                "md5sums_arm64": [
+                                    "a82161feff238d5de47f50fcd7da71e0"
+                                ],
+                                "md5sums_arm": [
+                                    "711bc9242e84e24d51d5b5519bfb36f5"
+                                ],
+                                "sha256sums_x86_64": [
+                                    "d49612af6b44d17db7db45538356d6b10527c39db9e3df929dc95914833ca47b"
+                                ],
+                                "sha256sums_x86": [
+                                    "be2d1b128e901c3b5d214d9d6d3a82031b1207b616d02f1831d7d9b738f78df7"
+                                ],
+                                "sha256sums_arm64": [
+                                    "e075a61ffc457bd74fd1449c3a1ebc6ec374bdbe7956ae628270af785b815cfd"
+                                ],
+                                "sha256sums_arm": [
+                                    "88297cd88e2eb44034934ef81c338df7ee206c6b4d4417e00c0f8abd4d5c89b5"
                                 ],
                                 "arch": [
-                                    "x86_64"
+                                    "x86_64",
+                                    "x86",
+                                    "arm64",
+                                    "arm"
                                 ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "ndk_translation-chromeos_guybrush-patched",
-                        "list": [
+                            },
                             {
-                                "name": "ndk_translation-chromeos_guybrush-patched",
-                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from guybrush firmware. Applied qwerty12356-wart's patch",
-                                "version": "R119-15633.69.0",
-                                "path": "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0",
-                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
-                                "_commit": "0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc",
+                                "name": "LiteGapps-Lite",
+                                "description": "LiteGapps Lite is a small and light version of google apps.",
+                                "version": "11.0-202401102-unofficial",
+                                "path": "11.0_20241102",
                                 "android_version": "11",
+                                "install": "gapps.install",
                                 "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "scripton_ndk.sh"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "ndk_translation-chromeos_guybrush-patched-R119-15633.69.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/0c6b0aad45498bbdb22eb1311b145d08ff4ce1fc.zip"
-                                ],
-                                "md5sums": [
-                                    "6d4b3788ac9e7e953aada561f64a2563"
-                                ],
-                                "sha256sums": [
-                                    "6733a22db198acccead8b41074e51751c9d4831039cb0df6c6309a6dc92b3196"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "ndk_translation-chromeos_zork",
-                        "list": [
-                            {
-                                "name": "ndk_translation-chromeos_zork",
-                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware",
-                                "version": "R125-15853.53.0",
-                                "path": "ndk_translation-chromeos_zork-R125-15853.53.0",
-                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
-                                "_commit": "faece8cc787a520193545116501cad40534063fc",
-                                "android_version": "13",
-                                "files": [
-                                    "prop.json",
+                                    "gapps.install",
                                     "EXTENSION"
                                 ],
                                 "provides": [
-                                    "arm_translaton"
+                                    "gapps"
                                 ],
                                 "conflicts": [
-                                    "arm_translaton"
+                                    "gapps",
+                                    "microg"
                                 ],
-                                "source": [
-                                    "ndk_translation-chromeos_zork-R125-15853.53.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/faece8cc787a520193545116501cad40534063fc.zip"
+                                "source_x86_64": [
+                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86_64-11.0-20241102-unofficial.zip"
                                 ],
-                                "md5sums": [
-                                    "f7605b31e51eaa69f13b508b20e74d10"
+                                "source_x86": [
+                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-x86-11.0-20241102-unofficial.zip"
                                 ],
-                                "sha256sums": [
-                                    "235b31e75cd62fe18a6d11f4772df096c767d0d0252ef7eb7a2aeb56448ba915"
+                                "source_arm64": [
+                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm64-11.0-20241102-unofficial.zip"
+                                ],
+                                "source_arm": [
+                                    "LiteGapps-Lite-11.0-202401102-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20241102/LiteGapps-arm-11.0-20241102-unofficial.zip"
+                                ],
+                                "md5sums_x86_64": [
+                                    "628180d6bd49648ed35a636ee4554224"
+                                ],
+                                "md5sums_x86": [
+                                    "0ad414f2f0e421037317ea235d45da4b"
+                                ],
+                                "md5sums_arm64": [
+                                    "640e81d6b15c204adea164fcdc5b9df8"
+                                ],
+                                "md5sums_arm": [
+                                    "ab70cfcbd6f6fed356d7592c4d9500d1"
+                                ],
+                                "sha256sums_x86_64": [
+                                    "9dabcd8af1b22c0b00caeb2fecf493939c694b328a3a1f0243dc2ae08a47f869"
+                                ],
+                                "sha256sums_x86": [
+                                    "1d382d01f0a9e3e797c1731e93607948ec72d719ce8d3be6a60d1aefa0db22f2"
+                                ],
+                                "sha256sums_arm64": [
+                                    "4efc071de5ccdd5fb91d91ed0b084bdf8be49b0cf9f34767c1f9738d8228e8cf"
+                                ],
+                                "sha256sums_arm": [
+                                    "fb4a50084326cd28acdb43b865f1a3c43f2e11ea314cc1fd6cf7965866712103"
                                 ],
                                 "arch": [
-                                    "x86_64"
+                                    "x86_64",
+                                    "x86",
+                                    "arm64",
+                                    "arm"
                                 ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "houdini",
-                "description": "Intel's libhoudini, for Intel/AMD X86 CPU",
-                "path": "houdini",
-                "list": [
-                    {
-                        "path": "houdini-chromeos_octopus",
-                        "list": [
+                            },
                             {
-                                "name": "houdini-chromeos_octopus",
-                                "description": "Intel's libhoudini for Intel x86 CPU, pulled from ChromeOS's arcvm image for volteer Chromebooks",
-                                "version": "39489",
-                                "path": "houdini-chromeos_octopus-39489",
-                                "_commit": "5643480a2c504bd0ee4739a6354fefc70d032ad4",
-                                "_repo": "vendor_intel_proprietary_houdini",
+                                "name": "LiteGapps-Lite",
+                                "description": "LiteGapps Lite is a small and light version of google apps.",
+                                "version": "13.0-20250810-unofficial",
+                                "path": "13.0_20250810",
                                 "android_version": "13",
+                                "install": "gapps.install",
                                 "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "houdini.rc"
+                                    "gapps.install",
+                                    "EXTENSION"
                                 ],
                                 "provides": [
-                                    "arm_translaton"
+                                    "gapps"
                                 ],
                                 "conflicts": [
-                                    "arm_translaton"
+                                    "gapps",
+                                    "microg"
                                 ],
-                                "source": [
-                                    "houdini-chromeos_octopus-39489.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/5643480a2c504bd0ee4739a6354fefc70d032ad4.zip"
+                                "source_x86_64": [
+                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-x86_64-13.0-20250810-unofficial.zip"
                                 ],
-                                "md5sums": [
-                                    "9085a6ec5d0ec5b7b715981676ffee18"
+                                "source_arm64": [
+                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm64-13.0-20250810-unofficial.zip"
                                 ],
-                                "sha256sums": [
-                                    "8464456aa108ee50205ed9e530b109cb4ebdc603f0b41471de5867cd13b1dfc3"
+                                "source_arm": [
+                                    "LiteGapps-Lite-13.0-20250810-unofficial.zip::https://github.com/ayasa520/litegapps/releases/download/20250810/LiteGapps-arm-13.0-20250810-unofficial.zip"
                                 ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-chromeos_brya",
-                        "list": [
-                            {
-                                "name": "houdini-chromeos_brya",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks",
-                                "version": "38795",
-                                "path": "houdini-chromeos_brya-38795",
-                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "houdini.rc"
+                                "md5sums_x86_64": [
+                                    "694ae42414e596b82190dc037e4047ef"
                                 ],
-                                "provides": [
-                                    "arm_translaton"
+                                "md5sums_arm64": [
+                                    "cab649c230cec941f4d4e2f686bb9828"
                                 ],
-                                "conflicts": [
-                                    "arm_translaton"
+                                "md5sums_arm": [
+                                    "809185cf8438732131bc00bf0f496b34"
                                 ],
-                                "source": [
-                                    "houdini-chromeos_brya-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
+                                "sha256sums_x86_64": [
+                                    "75f6643d4ca10e1fe005fed4c3db54d174b2470442f4da006bd137ebfb94083a"
                                 ],
-                                "md5sums": [
-                                    "b3c745de3c7d332169c7b5d4c286a4fb"
+                                "sha256sums_arm64": [
+                                    "c14b23028134a859e0987b81cf700a4b6c848ab0f1149ff384b4da9c4376ec22"
                                 ],
-                                "sha256sums": [
-                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
+                                "sha256sums_arm": [
+                                    "b90679cb032bd32c5c66c6ef2097b0993ea47a460671f32c1e4b98127deaf39e"
                                 ],
                                 "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-chromeos_brya-patched",
-                        "list": [
-                            {
-                                "name": "houdini-chromeos_brya-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from ChromeOS's arcvm image for brya Chromebooks. Applied qwerty12356-wart's patch",
-                                "version": "38795",
-                                "path": "houdini-chromeos_brya-patched-38795",
-                                "_commit": "0488b666dfdb5378b98067aea50b4508db12ce3a",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "scripton.sh",
-                                    "houdini.rc"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-chromeos_brya-patched-38795.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/0488b666dfdb5378b98067aea50b4508db12ce3a.zip"
-                                ],
-                                "md5sums": [
-                                    "b3c745de3c7d332169c7b5d4c286a4fb"
-                                ],
-                                "sha256sums": [
-                                    "433641b72cd69d233d35c048082987db838ddd850b9ad457141df2c8a1494b4f"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-wsa11",
-                        "list": [
-                            {
-                                "name": "houdini-wsa11",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image",
-                                "version": "38765",
-                                "path": "houdini-wsa11-38765",
-                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "houdini.rc"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-wsa11-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
-                                ],
-                                "md5sums": [
-                                    "5554b11cba905058c3d9bb5e45535d83"
-                                ],
-                                "sha256sums": [
-                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
-                                ],
-                                "arch": [
-                                    "x86_64"
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "path": "houdini-wsa11-patched",
-                        "list": [
-                            {
-                                "name": "houdini-wsa11-patched",
-                                "description": "Intel's libhoudini for intel/AMD x86 CPU pulled from Microsoft's WSA 11 image. Applied qwerty12356-wart's patch",
-                                "version": "38765",
-                                "path": "houdini-wsa11-patched-38765",
-                                "_repo": "vendor_intel_proprietary_houdini",
-                                "_commit": "cf7f970f6004f0c329b0464e3d65f9b0e2baea91",
-                                "android_version": "11",
-                                "files": [
-                                    "prop.json",
-                                    "EXTENSION",
-                                    "scripton.sh",
-                                    "houdini.rc"
-                                ],
-                                "provides": [
-                                    "arm_translaton"
-                                ],
-                                "conflicts": [
-                                    "arm_translaton"
-                                ],
-                                "source": [
-                                    "houdini-wsa11-patched-38765.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/cf7f970f6004f0c329b0464e3d65f9b0e2baea91.zip"
-                                ],
-                                "md5sums": [
-                                    "5554b11cba905058c3d9bb5e45535d83"
-                                ],
-                                "sha256sums": [
-                                    "dc4e559acdc7d6c42d7d0e44c97e268074d23a4789f59c218a12ee5509aa774c"
-                                ],
-                                "arch": [
-                                    "x86_64"
+                                    "x86_64",
+                                    "arm64",
+                                    "arm"
                                 ]
                             }
                         ]

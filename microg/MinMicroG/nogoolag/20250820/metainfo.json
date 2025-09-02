@@ -1,0 +1,19 @@
+{
+    "name": "MinMicroG-NoGoolag", 
+    "version": "20250820", 
+    "description": "A Minimal MicroG installer with just the essentials", 
+    "provides": [
+        "microg"
+    ], 
+    "conflicts": [
+        "gapps", 
+        "microg"
+    ], 
+    "source": [
+        "MinMicroG-NoGoolag-20250820.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.08.20/MinMicroG-NoGoolag-UPDATELY-20250820010422.zip"
+    ], 
+    "sha256sums": [
+        "ad95e0d5848f0685c3cd86469d2dc3366843c1b3aa2495f14427b44400b10d9d"
+    ], 
+    "install": "microg.install"
+}

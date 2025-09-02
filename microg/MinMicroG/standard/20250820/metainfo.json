@@ -1,0 +1,19 @@
+{
+    "name": "MinMicroG-Standard", 
+    "version": "20250820", 
+    "description": "A Minimal MicroG installer with just the essentials", 
+    "provides": [
+        "microg"
+    ], 
+    "conflicts": [
+        "gapps", 
+        "microg"
+    ], 
+    "source": [
+        "MinMicroG-Standard-20250820.zip::https://github.com/FriendlyNeighborhoodShane/MinMicroG-abuse-CI/releases/download/2025.08.20/MinMicroG-Standard-UPDATELY-20250820010434.zip"
+    ], 
+    "sha256sums": [
+        "0261a89653992067b579090ac25f488164f4aa4235436dc730653ce514f725b8"
+    ], 
+    "install": "microg.install"
+}

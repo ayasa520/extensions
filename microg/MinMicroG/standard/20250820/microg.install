@@ -1,0 +1,26 @@
+pre_install:
+  - rm_apk: ["com.google.android.gms", "com.android.vending"]
+  - rm_data: 
+    - "data/com.google.android.gms"
+    - "data/com.android.vending"
+    - "data/com.google.android.gms"
+    - "data/com.android.vending"
+    - "system/package_cache/*/GoogleBackupTransport*"
+    - "system/package_cache/*/MicroGGMSCore*"
+    - "system/package_cache/*/Phonesky*"
+    - "system/package_cache/*/MicroGGSFProxy*"
+    - "system/package_cache/*/GoogleCalendarSyncAdapter*"
+    - "system/package_cache/*/GoogleContactsSyncAdapter*"
+    - "system/package_cache/*/AuroraDroid*"
+post_remove:
+  - rm_apk: ["com.google.android.gms", "com.android.vending"]
+  - rm_data: 
+    - "data/com.google.android.gms"
+    - "data/com.android.vending"
+    - "system/package_cache/*/GoogleBackupTransport*"
+    - "system/package_cache/*/MicroGGMSCore*"
+    - "system/package_cache/*/Phonesky*"
+    - "system/package_cache/*/MicroGGSFProxy*"
+    - "system/package_cache/*/GoogleCalendarSyncAdapter*"
+    - "system/package_cache/*/GoogleContactsSyncAdapter*"
+    - "system/package_cache/*/AuroraDroid*"

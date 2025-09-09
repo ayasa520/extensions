@@ -1,0 +1,26 @@
+{
+    "name": "ndk_translation-chromeos_zork", 
+    "version": "R136-16238.47.0", 
+    "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware", 
+    "provides": [
+        "arm_translaton"
+    ], 
+    "conflicts": [
+        "arm_translaton"
+    ], 
+    "_repo": "vendor_google_proprietary_ndk_translation-prebuilt", 
+    "_commit": "68734c52556d3d7a6db34c603dd9276915c29f2f", 
+    "source": [
+        "ndk_translation-chromeos_zork-R136-16238.47.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/68734c52556d3d7a6db34c603dd9276915c29f2f.zip"
+    ], 
+    "md5sums": [
+        "0b2207c490fcb400aa5c87fcf0d52d38"
+    ], 
+    "sha256sums": [
+        "a142d1586c9eafb5edf62277110f2128bc03066179a6783bcaa33ee322e1cbd0"
+    ], 
+    "android_version": "13", 
+    "arch": [
+        "x86_64"
+    ]
+}

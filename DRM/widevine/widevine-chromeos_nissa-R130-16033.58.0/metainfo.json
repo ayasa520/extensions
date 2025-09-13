@@ -1,7 +1,7 @@
 {
     "name": "widevine", 
-    "version": "chromeos_hatch-R107-15117.112.0", 
-    "description": "Prebuilt Widevine DRM L3, pulled from ChromeOS's hatch recovery image", 
+    "version": "chromeos_nissa-R130-16033.58.0", 
+    "description": "Prebuilt Widevine DRM L3, pulled from ChromeOS's nissa recovery image", 
     "provides": [
         "widevine"
     ], 
@@ -9,17 +9,17 @@
         "widevine"
     ], 
     "_repo": "vendor_google_proprietary_widevine-prebuilt", 
-    "_commit": "48d1076a570837be6cdce8252d5d143363e37cc1", 
+    "_commit": "679552343d8b2e8d7a19b6df61c7a03963d0c75b", 
     "source": [
-        "widevine-chromeos_hatch-R107-15117.112.0.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/48d1076a570837be6cdce8252d5d143363e37cc1.zip"
+        "widevine-chromeos_nissa-R130-16033.58.0.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/679552343d8b2e8d7a19b6df61c7a03963d0c75b.zip"
     ], 
     "md5sums": [
-        "f587b8859f9071da4bca6cea1b9bed6a"
+        "80ab79ea85c7b2556baedb371a54e01c"
     ], 
     "sha256sums": [
-        "2ba056f1778c9c2ae26efaf8098e6339d6922d7f35c2bf5eedbeaa2408184e56"
+        "ba7b0ceb9152df3b00f0a5893a52fe954edcbd8b95693c0e65105a34f4c519c2"
     ], 
-    "android_version": "11", 
+    "android_version": "13", 
     "arch": [
         "x86_64"
     ]

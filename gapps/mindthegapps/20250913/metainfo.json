@@ -18,12 +18,6 @@
     "source_arm": [
         "MindTheGapps-20240913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-arm-20250913.zip"
     ], 
-    "md5sums_arm64": [
-        "44bd297bea0b3b7f6b36f295b429c8bdce432eba55ec1ddd74f6920e22f65ff8"
-    ], 
-    "md5sums_arm": [
-        "60dce548571fc6d28adb8e5289d723d7ad4bcfa3bd4259e3cc8a61fb569ad313"
-    ], 
     "sha256sums_x86_64": [
         "71cf70e6358ecc4d536b9426e6e256d35d128741da48efab69ab6bf7544c6228"
     ], 

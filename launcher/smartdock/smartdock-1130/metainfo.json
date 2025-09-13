@@ -1,0 +1,20 @@
+{
+    "name": "smartdock", 
+    "version": "1.13.0", 
+    "description": "A user-friendly desktop mode launcher that offers a modern and customizable user", 
+    "provides": [
+        "smartdock launcher"
+    ], 
+    "conflicts": [
+        "launcher"
+    ], 
+    "source": [
+        "smartdock-1.13.0.apk::https://f-droid.org/repo/cu.axel.smartdock_1130.apk"
+    ], 
+    "md5sums": [
+        "6bfedb959ef5855c3782e8001cb67f86"
+    ], 
+    "sha256sums": [
+        "530adb93edf085f197b0380082d27b9a11f5cdbe675992f0251697bd658300b3"
+    ]
+}

@@ -61,4 +61,6 @@ package() {
             mknod "$path" c 0 0
         fi
     done
+
+    sed -i '/<\/privapp-permissions>/i\        <permission name="android.permission.INTERACT_ACROSS_USERS"/>' $pkgdir/system/etc/permissions/com.google.android.gms.xml
 }

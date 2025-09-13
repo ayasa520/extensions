@@ -1,0 +1,19 @@
+name=widevine
+version="wsa-13_TP1A.221105.002"
+description="Prebuilt Widevine DRM L3, pulled from WSA's vendor image"
+provides=("widevine")
+conflicts=("widevine")
+_repo="vendor_google_proprietary_widevine-prebuilt"
+_commit="a8524d608431573ef1c9313822d271f78728f9a6"
+source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
+md5sums=("5c55df61da5c012b4e43746547ab730f")
+sha256sums=("ee497897c25ca98bf59fb27046111593ffedf230387ee2d8a7bdd29a884d5592")
+android_version=13
+arch=("x86_64")
+
+package() {
+    cd $srcdir/..
+    mkdir -p $pkgdir/system
+    unzip ${name}-${version}.zip -d $srcdir
+    cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
+}

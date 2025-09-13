@@ -1,0 +1,26 @@
+{
+    "name": "houdini-wsa11", 
+    "version": "14.0.0b_y.GoogleGame_com1.0", 
+    "description": "Intel's libhoudini for Intel x86 CPU, pulled from HPE image from Google Play Games for PC", 
+    "provides": [
+        "arm_translaton"
+    ], 
+    "conflicts": [
+        "arm_translaton"
+    ], 
+    "_commit": "7e21ea3f63bd89e9e8af54e32da41bd8b65c93a1", 
+    "_repo": "vendor_intel_proprietary_houdini", 
+    "source": [
+        "houdini-wsa11-14.0.0b_y.GoogleGame_com1.0.zip::https://github.com/supremegamers/vendor_intel_proprietary_houdini/archive/7e21ea3f63bd89e9e8af54e32da41bd8b65c93a1.zip"
+    ], 
+    "md5sums": [
+        "f8cf5db10e5fdb9b77e98e515a9b08c9"
+    ], 
+    "sha256sums": [
+        "2459a1d39ffde2d19ce3d45196f2d92c222f7ba09db2048f26449eb310c3bd84"
+    ], 
+    "android_version": "13", 
+    "arch": [
+        "x86_64"
+    ]
+}

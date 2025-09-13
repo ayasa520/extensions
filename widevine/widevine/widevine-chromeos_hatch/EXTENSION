@@ -1,0 +1,23 @@
+name=widevine-chromeos_hatch
+version=38795
+description="Prebuilt Widevine DRM L3, pulled from ChromeOS's hatch recovery image"
+provides=("widevine")
+conflicts=("widevine")
+_repo="vendor_google_proprietary_widevine-prebuilt"
+_commit_x86="48d1076a570837be6cdce8252d5d143363e37cc1"
+_commit_arm64="a1a19361d36311bee042da8cf4ced798d2c76d98"
+source_x86_64=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit_x86}.zip")
+md5sums_x86_64=("f587b8859f9071da4bca6cea1b9bed6a")
+sha256sums_x86_64=("2ba056f1778c9c2ae26efaf8098e6339d6922d7f35c2bf5eedbeaa2408184e56")
+source_arm64=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit_arm64}.zip")
+md5sums_arm64=("fed6898b5cfd2a908cb134df97802554")
+sha256sums_arm64=("177ef5bc164ddd19e9959ca84524cb8bde57112cf1ea0f7ccbf9adf56cca5070")
+android_version=11
+arch=("x86_64" "arm64")
+
+package() {
+    cd $srcdir/..
+    mkdir -p $pkgdir/system
+    unzip ${name}-${version}.zip -d $srcdir
+    cp -r $srcdir/$_repo-$_commit_$CARCH/prebuilts/* $pkgdir/system
+}

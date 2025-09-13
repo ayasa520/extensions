@@ -1,0 +1,19 @@
+name=widevine
+version=chromeos_nissa-R130-16033.58.0
+description="Prebuilt Widevine DRM L3, pulled from ChromeOS's nissa recovery image"
+provides=("widevine")
+conflicts=("widevine")
+_repo="vendor_google_proprietary_widevine-prebuilt"
+_commit="679552343d8b2e8d7a19b6df61c7a03963d0c75b"
+source=("${name}-${version}.zip::https://github.com/supremegamers/${_repo}/archive/${_commit}.zip")
+md5sums=("80ab79ea85c7b2556baedb371a54e01c")
+sha256sums=("ba7b0ceb9152df3b00f0a5893a52fe954edcbd8b95693c0e65105a34f4c519c2")
+android_version=13
+arch=("x86_64")
+
+package() {
+    cd $srcdir/..
+    mkdir -p $pkgdir/system
+    unzip ${name}-${version}.zip -d $srcdir
+    cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/system
+}

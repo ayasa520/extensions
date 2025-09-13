@@ -16,4 +16,6 @@ package() {
     mkdir -p $pkgdir/vendor
     unzip ${name}-${version}.zip -d $srcdir
     cp -r $srcdir/$_repo-$_commit/prebuilts/* $pkgdir/vendor
+    ln -s libprotobuf-cpp-lite-3.9.1.so "$pkgdir/vendor/lib64/libprotobuf-cpp-lite.so"
+    ln -s libprotobuf-cpp-lite-3.9.1.so "$pkgdir/vendor/lib/libprotobuf-cpp-lite.so"
 }

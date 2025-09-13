@@ -1,0 +1,21 @@
+{
+    "name": "hidestatusbar", 
+    "version": "0.0.3", 
+    "description": "Hide status bar", 
+    "provides": [
+        "hidestatusbar"
+    ], 
+    "conflicts": [
+        "hidestatusbar"
+    ], 
+    "source": [
+        "hidestatusbar-0.0.3.apk::https://github.com/ayasa520/hide-status-bar/releases/download/v0.0.3/app-release.apk"
+    ], 
+    "md5sums": [
+        "fea564efce413402008ce980ba1042a8"
+    ], 
+    "sha256sums": [
+        "79fb3d94e10a0a0b0b2ba151e058c9630e2416dd9ccf54fb86f1de08574594f8"
+    ], 
+    "android_version": "13"
+}

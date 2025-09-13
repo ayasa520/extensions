@@ -1,4 +1,4 @@
-name=houdini-wsa11
+name=houdini-hpe-14
 version=14.0.0b_y.GoogleGame_com1.0
 description="Intel's libhoudini for Intel x86 CPU, pulled from HPE image from Google Play Games for PC"
 provides=("arm_translaton")

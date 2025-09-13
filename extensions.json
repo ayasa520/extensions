@@ -78,6 +78,37 @@
                                 "arch": [
                                     "x86_64"
                                 ]
+                            },
+                            {
+                                "name": "ndk_translation-chromeos_zork",
+                                "description": "Google's ndk_translation for Intel/AMD x86 CPU pulled from zork firmware",
+                                "version": "R136-16238.47.0",
+                                "path": "ndk_translation-chromeos_zork-R136-16238.47.0",
+                                "_repo": "vendor_google_proprietary_ndk_translation-prebuilt",
+                                "_commit": "68734c52556d3d7a6db34c603dd9276915c29f2f",
+                                "android_version": "13",
+                                "files": [
+                                    "EXTENSION",
+                                    "prop.json"
+                                ],
+                                "provides": [
+                                    "arm_translaton"
+                                ],
+                                "conflicts": [
+                                    "arm_translaton"
+                                ],
+                                "source": [
+                                    "ndk_translation-chromeos_zork-R136-16238.47.0.zip::https://github.com/supremegamers/vendor_google_proprietary_ndk_translation-prebuilt/archive/68734c52556d3d7a6db34c603dd9276915c29f2f.zip"
+                                ],
+                                "md5sums": [
+                                    "0b2207c490fcb400aa5c87fcf0d52d38"
+                                ],
+                                "sha256sums": [
+                                    "a142d1586c9eafb5edf62277110f2128bc03066179a6783bcaa33ee322e1cbd0"
+                                ],
+                                "arch": [
+                                    "x86_64"
+                                ]
                             }
                         ]
                     },

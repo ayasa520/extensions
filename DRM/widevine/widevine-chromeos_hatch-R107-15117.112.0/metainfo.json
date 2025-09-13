@@ -1,6 +1,6 @@
 {
-    "name": "widevine-chromeos_hatch", 
-    "version": "38795", 
+    "name": "widevine", 
+    "version": "chromeos_hatch-R107-15117.112.0", 
     "description": "Prebuilt Widevine DRM L3, pulled from ChromeOS's hatch recovery image", 
     "provides": [
         "widevine"
@@ -12,7 +12,7 @@
     "_commit_x86": "48d1076a570837be6cdce8252d5d143363e37cc1", 
     "_commit_arm64": "a1a19361d36311bee042da8cf4ced798d2c76d98", 
     "source_x86_64": [
-        "widevine-chromeos_hatch-38795.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/48d1076a570837be6cdce8252d5d143363e37cc1.zip"
+        "widevine-chromeos_hatch-R107-15117.112.0.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/48d1076a570837be6cdce8252d5d143363e37cc1.zip"
     ], 
     "md5sums_x86_64": [
         "f587b8859f9071da4bca6cea1b9bed6a"
@@ -21,7 +21,7 @@
         "2ba056f1778c9c2ae26efaf8098e6339d6922d7f35c2bf5eedbeaa2408184e56"
     ], 
     "source_arm64": [
-        "widevine-chromeos_hatch-38795.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/a1a19361d36311bee042da8cf4ced798d2c76d98.zip"
+        "widevine-chromeos_hatch-R107-15117.112.0.zip::https://github.com/supremegamers/vendor_google_proprietary_widevine-prebuilt/archive/a1a19361d36311bee042da8cf4ced798d2c76d98.zip"
     ], 
     "md5sums_arm64": [
         "fed6898b5cfd2a908cb134df97802554"

@@ -1,5 +1,5 @@
-name=widevine-chromeos_hatch
-version=38795
+name=widevine
+version=chromeos_hatch-R107-15117.112.0
 description="Prebuilt Widevine DRM L3, pulled from ChromeOS's hatch recovery image"
 provides=("widevine")
 conflicts=("widevine")

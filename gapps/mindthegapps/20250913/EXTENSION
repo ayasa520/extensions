@@ -1,5 +1,5 @@
 name=MindTheGapps
-version=20240913
+version=20250913
 description="GApps for android devices"
 provides=("gapps")
 conflicts=("gapps" "microg")

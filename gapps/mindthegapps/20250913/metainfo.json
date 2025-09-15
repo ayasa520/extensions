@@ -10,13 +10,13 @@
         "microg"
     ], 
     "source_x86_64": [
-        "MindTheGapps-20240913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-x86_64-20250913.zip"
+        "MindTheGapps-20250913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-x86_64-20250913.zip"
     ], 
     "source_arm64": [
-        "MindTheGapps-20240913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-arm64-20250913.zip"
+        "MindTheGapps-20250913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-arm64-20250913.zip"
     ], 
     "source_arm": [
-        "MindTheGapps-20240913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-arm-20250913.zip"
+        "MindTheGapps-20250913.zip::https://github.com/ayasa520/MindTheGappsBuilder/releases/download/20250913/MindTheGapps-13.0.0-arm-20250913.zip"
     ], 
     "sha256sums_x86_64": [
         "71cf70e6358ecc4d536b9426e6e256d35d128741da48efab69ab6bf7544c6228"

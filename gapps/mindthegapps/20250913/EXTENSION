@@ -16,4 +16,8 @@ install="gapps.install"
 package() {
     unzip "${name}-${version}.zip" -d "$srcdir"
     cp -rf "$srcdir"/system $pkgdir/
+    chown -R root:root $pkgdir/
+    find $pkgdir -type d -exec chmod 755 {} \;
+    find $pkgdir -type f -exec chmod 644 {} \;
+    find $pkgdir -name "*.sh" -exec chmod 755 {} \;
 }
